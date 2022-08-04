@@ -1,0 +1,57 @@
+header .menu {
+  padding: 20px 0;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+}
+header .menu * {
+  font-family: "AvenirNextCyr-Medium";
+}
+header .menu .logo,
+header .menu li,
+header .menu button {
+  cursor: pointer;
+}
+header .menu .logo {
+  margin-left: 130px;
+}
+header .menu nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+header .menu nav > ul li {
+  list-style-type: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .menu nav > ul li img {
+  margin-left: 5px;
+}
+header .menu button {
+  background: #FFDB80;
+  border-radius: 30px;
+  border: none;
+  color: #6D31D0;
+  padding: 9px 24px;
+  margin-right: 110px;
+}

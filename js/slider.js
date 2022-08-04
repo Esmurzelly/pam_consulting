@@ -1,7 +1,10 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'vertical',
     loop: true,
+
+    autoplay: {
+      delay: 4000,
+    },
   
     // If we need pagination
     pagination: {
@@ -16,4 +19,3 @@ const swiper = new Swiper('.swiper', {
       draggable: true,
     },
   });
-  

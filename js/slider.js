@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
     direction: 'vertical',
     loop: true,
 
@@ -17,5 +17,15 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,
+    },
+  });
+
+
+  var Myswiper = new Swiper(".swiper2", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
   });

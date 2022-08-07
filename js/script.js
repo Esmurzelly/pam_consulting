@@ -1,26 +1,29 @@
-  // import Swiper JS
-  import Swiper from 'swiper';
-  // import Swiper styles
-  import 'swiper/css';
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-  
+const hamb = document.querySelector("#hamb");
+const popup = document.querySelector("#popup");
+const menu = document.querySelector("#menu__list");
+const body = document.body;
+const links = Array.from(menu.children);
+
+
+hamb.addEventListener("click", hambHandler);
+links.forEach((link) => {
+    link.addEventListener("click", closeOnClick)
+})
+
+function hambHandler (e) {
+    e.preventDefault();
+    popup.classList.toggle("open");
+    hamb.classList.toggle("active");
+    body.classList.toggle("noscroll");
+    renderPopup();
+}
+
+function closeOnClick() {
+    popup.classList.remove("open");
+    hamb.classList.remove("active");
+    body.classList.remove("noscroll");
+}
+
+function renderPopup() {
+    popup.appendChild(menu);
+}

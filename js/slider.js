@@ -24,8 +24,21 @@ const swiper = new Swiper('.swiper1', {
   var Myswiper = new Swiper(".swiper2", {
     slidesPerView: 3,
     spaceBetween: 30,
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+    
   });
+

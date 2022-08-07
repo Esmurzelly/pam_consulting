@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="css/home/header.css">
     <link rel="stylesheet" href="css/home/main.css">
     <link rel="stylesheet" href="css/home/footer.css">
+    <link rel="stylesheet" href="css/adaptive/adaptive_main.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  
 />
 </head>
 <body>
@@ -22,17 +24,35 @@
             <div class="logo"><img src="./img/header/logo.svg" alt="logo"></div>
         
             <nav>
-                <ul>
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                
+                <ul class="menu__list" id="menu__list">
                     <li>home</li>
                     <li>about us</li>
-                    <li>services <img src="./img/header/down.svg" alt="services"></li>
+                    <li>
+                        <a href="" class="menu-link">services</a>
+                        <img src="./img/header/down.svg" alt="services">
+                        <ul class="menu__sub-list">
+                            <li><a href="" class="menu__sub-link">Investments opportunities</a></li>
+                            <li><a href="" class="menu__sub-link">Business relocation</a></li>
+                            <li><a href="" class="menu__sub-link">Family relocation</a></li>
+                        </ul>
+                    </li>
                     <li>invest in cyprus</li>
                     <li>migration</li>
                     <li>contact us</li>
                 </ul>
             </nav>
-
+            <div class="popup" id="popup"></div>
+            
             <button>Get in touch</button>
+            
         </div>
 
         <div class="slider">
@@ -184,7 +204,6 @@
                 </div>
             </div>
         </div>
-        <div class="square"></div>
     </section>
 
     <section class="moving">
@@ -500,7 +519,7 @@
       </footer>
     
     
-
+      <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
 </body>

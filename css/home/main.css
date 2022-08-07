@@ -54,13 +54,11 @@
           box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
   text-align: center;
   border-radius: 20px;
-  max-width: 380px;
-}
-.our_services .cards .card img {
-  width: 380px;
+  max-width: 350px;
 }
 .our_services .cards .card .card_describing {
-  padding: 20px 30px;
+  max-width: 310px;
+  margin: 0 auto;
 }
 .our_services .cards .card .card_describing h3 {
   color: #434364;
@@ -90,17 +88,9 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
-}
-.our_services .square {
-  width: 14px;
-  height: 10px;
-  background: #D9D9D9;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.moving {
-  width: 100%;
-}
 .moving .moving__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,15 +102,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 80px;
   margin-bottom: 80px;
-  width: 100%;
+  max-width: 100%;
 }
 .moving .moving__content img {
-  max-width: 410px;
+  max-width: 30%;
 }
 .moving .moving__content .moving__info {
   display: -webkit-box;
@@ -136,7 +126,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   margin: 0 70px;
 }
 .moving .moving__content .moving__info h3 {
@@ -426,7 +415,6 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.43%, #828CDE), color-stop(201.93%, #6D31D0));
   background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
   padding: 37px 130px;
-  height: 100%;
 }
 .founder h2, .founder p {
   color: #FFFFFF;
@@ -993,35 +981,4 @@
   background: #FFFFFF;
   width: 12px;
   height: 12px;
-}
-
-footer {
-  background: #828CDE;
-}
-footer .footer_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #FFFFFF;
-  padding: 37px 141px 43px 434px;
-}
-footer .footer_info p {
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: #FFFFFF;
 }

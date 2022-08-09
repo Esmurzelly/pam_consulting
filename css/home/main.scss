@@ -48,7 +48,7 @@
                     font-size: 28px;
                     text-transform: uppercase;
                     width: 175px;
-                    margin: 0 auto;
+                    margin: 23px auto;
                 }
                 p {
                     font-weight: 400;
@@ -77,6 +77,10 @@
 
 
 .moving {
+    .up_photo,
+    .bottom_photo {
+        display: none;
+    }
     .moving__content {
         display: flex;
         flex-direction: row;
@@ -85,6 +89,7 @@
         margin-top: 80px;
         margin-bottom: 80px;
         max-width: 100%;
+        
         img {
             max-width: 30%;
         }
@@ -177,7 +182,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 280px;
+            max-width: 280px;
             text-align: center;
             &:first-child img {
                 background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
@@ -244,6 +249,7 @@
         align-items: flex-start;
         .cyprus_map_text {
             display: block;
+            margin-bottom: 100px;
             h3 {
                 font-family: 'Avenir Next';
                 font-style: normal;
@@ -430,7 +436,6 @@
     max-width: 1440px;
     padding: 80px 133px;
     h2 {
-        margin-top: 80px;
         font-family: 'Avenir Next';
         font-style: normal;
         font-weight: 600;
@@ -459,7 +464,7 @@
             }
 
             &:nth-child(2) img {
-                background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);                border-radius: 800px;
+                background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);               
                 border-radius: 45%;
                 padding: 25px;
             }
@@ -500,6 +505,41 @@
                     color: #434364;
                 }
             }
+        }
+    }
+}
+
+.partners.hide_first {
+    display: none;
+}
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    h2 {
+        text-align: center;
+        font-family: 'Avenir Next';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #434364;
+        margin-top: 80px;
+    }
+    .images_of_partners {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+        gap: 30px;
+        & img {
+            cursor: pointer;
         }
     }
 }

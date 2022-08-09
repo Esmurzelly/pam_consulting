@@ -67,7 +67,7 @@
   font-size: 28px;
   text-transform: uppercase;
   width: 175px;
-  margin: 0 auto;
+  margin: 23px auto;
 }
 .our_services .cards .card .card_describing p {
   font-weight: 400;
@@ -91,6 +91,10 @@
   margin-bottom: 20px;
 }
 
+.moving .up_photo,
+.moving .bottom_photo {
+  display: none;
+}
 .moving .moving__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,7 +240,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 280px;
+  max-width: 280px;
   text-align: center;
 }
 .choosing .choosing__types .choosing__type:first-child img {
@@ -324,6 +328,7 @@
 }
 .map .cyprus_map .cyprus_map_text {
   display: block;
+  margin-bottom: 100px;
 }
 .map .cyprus_map .cyprus_map_text h3 {
   font-family: "Avenir Next";
@@ -556,7 +561,6 @@
   padding: 80px 133px;
 }
 .how_we_make h2 {
-  margin-top: 80px;
   font-family: "Avenir Next";
   font-style: normal;
   font-weight: 600;
@@ -605,7 +609,6 @@
 }
 .how_we_make .how_we_make__types .how_we_make__type:nth-child(2) img {
   background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);
-  border-radius: 800px;
   border-radius: 45%;
   padding: 25px;
 }
@@ -650,6 +653,57 @@
   text-align: center;
   letter-spacing: 0.5px;
   color: #434364;
+}
+
+.partners.hide_first {
+  display: none;
+}
+
+.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+.partners h2 {
+  text-align: center;
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434364;
+  margin-top: 80px;
+}
+.partners .images_of_partners {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+  gap: 30px;
+}
+.partners .images_of_partners img {
+  cursor: pointer;
 }
 
 .contact {

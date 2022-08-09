@@ -273,6 +273,7 @@
             .cyprus_map_text {
                 display: block;
                 text-align: center;
+                margin-bottom: 10px;
                 h3 {
                     font-family: 'Avenir Next';
                     font-style: normal;
@@ -323,5 +324,138 @@
     // footer 
     footer .footer_info{
             padding: 9px 52px 26px 175px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header .slider .swiper-slide .content {
+        top: 110px;
+        left: 46px;
+        .main_info {
+            margin-left: 25px;
+        }
+        .arragements {
+            margin-left: 25px;
+        }
+        .advertisement {
+            margin-top: 70px;
+            .advertisement_types {
+                & div {
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
+                    & img {
+                        width: 123px;
+                        height: 108px;
+                        padding: 10px 7.5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .our_services {
+        .cards {
+            margin: 60px 130px 80px 130px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+
+            .card {
+                border-radius: 30px;
+                max-width: 580px;
+                img {
+                    width: 580px;
+                }
+            }
+        }
+    }    
+
+    .moving {
+        .up_photo,
+        .bottom_photo {
+            display: block;
+            max-width: 100%;
+        }
+        .moving__content {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            .moving__info {
+                margin: 0 auto;
+            }
+            img {
+                display: none;
+            }
+        }      
+    }
+
+    .choosing .choosing__types {
+        gap: 30px;
+        .choosing__type {
+            max-width: 230px;
+            .describe_choosing__type {
+                width: 257px;
+            }
+        }
+    }
+
+
+    .map .cyprus_map .cyprus_map_text p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+    .how_we_make .how_we_make__types {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        .how_we_make__type {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            text-align: center;
+        }
+    }
+
+    .partners.hide_first {
+        display: block;
+    }
+    .partners {
+        display: none;
+    }
+
+
+    .contact .form {
+        max-width: 100%;
+        margin-top: 60px;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid red;
+            max-width: 580px;
+            padding: 9px 14px;
+            
+            .form__data {
+                & input {
+                    padding: 12.5px 30px 10.5px 23px;
+                }
+            }
+        }
+    }
+
+    .question {
+        padding: 64px 28px 1px 5px;
     }
 }

@@ -98,6 +98,25 @@
     }    
 
 
+    // switch burger and button
+    header .menu {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        .logo {
+            margin-left: 0px;
+            order: 1;
+        }
+        nav {
+            order: 3;
+        }
+        button {
+            margin-right: 0;
+            order: 2;
+        }
+    }
+
+
     
     // slider
     header .swiper {
@@ -287,6 +306,9 @@
                     margin-top: 20px;
                 }
             }
+            img {
+                max-width: 100%;
+            }
         }
         
     }
@@ -443,7 +465,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            border: 2px solid red;
             max-width: 580px;
             padding: 9px 14px;
             
@@ -458,4 +479,115 @@
     .question {
         padding: 64px 28px 1px 5px;
     }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        .menu {
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            .logo {
+                margin-left: 0px;
+                order: 1;
+            }
+            nav {
+                order: 3;
+            }
+            button {
+                margin-right: 0;
+                order: 2;
+            }
+        }
+    }
+    
+    header .slider .swiper .swiper-wrapper .swiper-slide_1 .content .advertisement {
+        display: none;
+    }
+
+    header .slider .swiper .swiper-wrapper .swiper-slide .content {
+        left: -23px;
+        top: 56px;
+        .main_info {
+            text-align: center;
+            margin-top: 30px;
+            & h4:first-child {
+                
+            }
+            & h5 {
+                width: 400px;
+                margin: 0 auto;
+                margin-top: 24px;
+            }
+            & button {
+                margin-top: 23px;
+                border: none;
+                background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+                box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+                border-radius: 88.1657px;
+                padding: 10px 20px;
+                color: #6D31D0;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+
+        .arragements{
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            
+            & p {
+                color: #FFDB80;
+                border-right: #ffffff;
+                background: rgba(109, 49, 208, 0.5);
+                border-radius: 10px;
+                padding: 0 5px;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            
+        }
+    }
+
+
+    .our_services .cards .card img {
+        max-width: 380px;
+    }
+
+    .choosing {
+        padding: 60px 20px;
+
+        .choosing__types {
+            gap: 20px;
+            .choosing__type {
+                max-width: 200px;
+                img {
+                    padding: 12px;
+                }
+                .describe_choosing__type {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .map  {
+        padding: 20px 0px;
+        .cyprus_map .cyprus_map_text {
+            width: 480px;
+            margin: 0 auto;
+        }
+        img {
+            max-width: 100%;
+        }
+        .examples {
+            display: none;
+        }
+    }
+    
+
 }

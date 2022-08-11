@@ -122,6 +122,34 @@
     padding: 15px;
   }
 
+  header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px;
+  }
+  header .menu .logo {
+    margin-left: 0px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header .menu nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  header .menu button {
+    margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
   header .swiper .swiper-pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -329,6 +357,9 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .map .cyprus_map .cyprus_map_text p {
     margin-top: 20px;
   }
+  .map .cyprus_map img {
+    max-width: 100%;
+  }
 
   .founder .founder_describing {
     display: -webkit-box;
@@ -507,7 +538,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border: 2px solid red;
     max-width: 580px;
     padding: 9px 14px;
   }
@@ -517,5 +547,121 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
 
   .question {
     padding: 64px 28px 1px 5px;
+  }
+}
+@media (max-width: 480px) {
+  header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px;
+  }
+  header .menu .logo {
+    margin-left: 0px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header .menu nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  header .menu button {
+    margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  header .slider .swiper .swiper-wrapper .swiper-slide_1 .content .advertisement {
+    display: none;
+  }
+
+  header .slider .swiper .swiper-wrapper .swiper-slide .content {
+    left: -23px;
+    top: 56px;
+  }
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .main_info {
+    text-align: center;
+    margin-top: 30px;
+  }
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .main_info h5 {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .main_info button {
+    margin-top: 23px;
+    border: none;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+            box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+    border-radius: 88.1657px;
+    padding: 10px 20px;
+    color: #6D31D0;
+    font-family: "Montserrat", sans-serif;
+  }
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .arragements {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .arragements p {
+    color: #FFDB80;
+    border-right: #ffffff;
+    background: rgba(109, 49, 208, 0.5);
+    border-radius: 10px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .our_services .cards .card img {
+    max-width: 380px;
+  }
+
+  .choosing {
+    padding: 60px 20px;
+  }
+  .choosing .choosing__types {
+    gap: 20px;
+  }
+  .choosing .choosing__types .choosing__type {
+    max-width: 200px;
+  }
+  .choosing .choosing__types .choosing__type img {
+    padding: 12px;
+  }
+  .choosing .choosing__types .choosing__type .describe_choosing__type {
+    width: 200px;
+  }
+
+  .map {
+    padding: 20px 0px;
+  }
+  .map .cyprus_map .cyprus_map_text {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .map img {
+    max-width: 100%;
+  }
+  .map .examples {
+    display: none;
   }
 }

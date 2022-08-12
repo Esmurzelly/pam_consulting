@@ -664,4 +664,75 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .map .examples {
     display: none;
   }
+
+  .founder {
+    padding: 37px 0px;
+  }
+  .founder .founder_describing {
+    margin-left: 50px;
+  }
+  .founder .founder_describing .line {
+    margin-top: 24px;
+    width: 290px;
+    right: 233px;
+  }
+  .founder .founder_describing p {
+    width: 400px;
+  }
+  .founder .founder_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px;
+    text-align: center;
+    margin: 23px auto 0px;
+    padding: 20px 50px;
+  }
+  .founder .founder_card .founder .founder_card .founder_card__name {
+    margin-left: 0;
+  }
+
+  .how_we_make {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  .how_we_make .how_we_make__types {
+    gap: 60px;
+  }
+  .how_we_make .how_we_make__types .how_we_make__type {
+    width: 138px;
+  }
+  .how_we_make .how_we_make__types .how_we_make__type .describe_choosing__type {
+    width: 173px;
+  }
+
+  .contact {
+    padding: 80px 40px;
+  }
+  .contact .form form .form__data input {
+    width: 100%;
+  }
+
+  .question {
+    padding: 64px 28px 1px 42px;
+  }
+
+  footer .footer_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    padding: 9px 52px 26px 60px;
+  }
 }

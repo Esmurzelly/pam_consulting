@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper1', {
       el: '.swiper-pagination',
       bulletActiveClass: 'swiper-pagination-bullet-active',
       bulletClass: 	'swiper-pagination-bullet',
-      clickable: true,
+      clickable: true
     },  
     // And if we need scrollbar
     scrollbar: {
@@ -25,7 +25,11 @@ const swiper = new Swiper('.swiper1', {
     slidesPerView: 3,
     spaceBetween: 30,
     breakpoints: {
-      480: {
+      240: {
+        slidesPerView: 1,
+        spaceBetween: 5
+      },
+      500: {
         slidesPerView: 2,
         spaceBetween: 20
       },

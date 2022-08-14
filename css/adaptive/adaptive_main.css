@@ -1,6 +1,75 @@
+@media (max-width: 1434px) {
+  .contact .form form {
+    padding: 34px 73px;
+  }
+}
+@media (max-width: 1240px) {
+  header .menu .logo {
+    margin-left: 20px;
+  }
+  header .menu button {
+    margin-right: 20px;
+  }
+
+  .map {
+    padding: 81px 50px 10px 26px;
+  }
+}
+@media (max-width: 1167px) {
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+}
+@media (max-width: 1020px) {
+  header .menu nav > ul > li {
+    font-size: 14px;
+  }
+
+  .moving .moving__content img {
+    max-width: 17%;
+  }
+}
 @media (max-width: 1000px) {
+  header .menu {
+    position: fixed;
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+    z-index: 99;
+  }
   header .menu .menu__list {
     display: none;
+  }
+  header .menu .menu__list li .triangle_down {
+    position: relative;
+    top: 14px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 0.1em solid #000;
+    border-top: 0.1em solid #000;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-left: 10px;
   }
   header .menu nav .hamb {
     display: -webkit-box;
@@ -94,9 +163,6 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .menu .popup img {
-    /* change img to figure!!!! */
-  }
 
   .popup.open {
     left: 0;
@@ -148,6 +214,10 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+
+  header .slider {
+    margin-top: 82px;
   }
 
   header .swiper .swiper-pagination {
@@ -317,29 +387,10 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .moving {
     max-width: 1000px;
   }
-  .moving .moving__content img {
-    max-width: 17%;
-  }
   .moving .moving__content .moving__info {
     margin: 0 20px;
   }
 
-  .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 50px;
-  }
   .map .cyprus_map .cyprus_map_text {
     display: block;
     text-align: center;
@@ -393,11 +444,36 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     padding: 16px 60px;
   }
 
+  .question .swiper-slide .content button {
+    top: 129px;
+    left: 235px;
+  }
+
   footer .footer_info {
     padding: 9px 52px 26px 175px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 938px) {
+  .question .swiper-slide .content button {
+    top: 119px;
+    left: 200px;
+  }
+}
+@media (max-width: 920px) {
+  .contact .form form {
+    padding: 16px 41px;
+  }
+  .contact .form form .form__data input {
+    padding: 12.5px 63px 10.5px 23px;
+  }
+}
+@media (max-width: 858px) {
+  .question .swiper-slide .content button {
+    top: 100px;
+    left: 172px;
+    font-size: 14px;
+  }
+
   header .slider .swiper-slide .content {
     top: 110px;
     left: 46px;
@@ -420,6 +496,17 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     padding: 10px 7.5px;
   }
 
+  .choosing .choosing__types {
+    gap: 30px;
+  }
+  .choosing .choosing__types .choosing__type {
+    max-width: 230px;
+  }
+  .choosing .choosing__types .choosing__type .describe_choosing__type {
+    width: 257px;
+  }
+}
+@media (max-width: 768px) {
   .our_services .cards {
     margin: 60px 130px 80px 130px;
     display: -webkit-box;
@@ -461,16 +548,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   }
   .moving .moving__content img {
     display: none;
-  }
-
-  .choosing .choosing__types {
-    gap: 30px;
-  }
-  .choosing .choosing__types .choosing__type {
-    max-width: 230px;
-  }
-  .choosing .choosing__types .choosing__type .describe_choosing__type {
-    width: 257px;
   }
 
   .map .cyprus_map .cyprus_map_text p {
@@ -543,10 +620,105 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   }
   .contact .form form .form__data input {
     padding: 12.5px 30px 10.5px 23px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
+  .founder {
+    padding: 37px 50px;
   }
 
   .question {
     padding: 64px 28px 1px 5px;
+  }
+}
+@media (max-width: 755px) {
+  .choosing .choosing__types {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 683px) {
+  header .slider .swiper-slide .content .advertisement {
+    display: none;
+  }
+}
+@media (max-width: 617px) {
+  .our_services .cards .card img {
+    max-width: 380px;
+  }
+
+  .founder .founder_describing .line {
+    right: 200px;
+  }
+
+  .how_we_make .how_we_make__types,
+.choosing .choosing__types {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 566px) {
+  .question .swiper-slide .content button {
+    top: 88px;
+    left: 147px;
+    font-size: 12px;
+  }
+
+  .founder {
+    padding: 37px 0px;
+  }
+  .founder .founder_describing {
+    margin-left: 25px;
+  }
+  .founder .founder_describing .line {
+    margin-top: 24px;
+    width: 290px;
+    right: 120px;
+  }
+  .founder .founder_describing p {
+    max-width: 270px;
+    margin-right: 0px;
+  }
+  .founder .founder_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px;
+    text-align: center;
+    margin: 23px auto 0px;
+    padding: 20px 50px;
+  }
+  .founder .founder_card .founder .founder_card .founder_card__name {
+    margin-left: 0;
+  }
+
+  .contact {
+    padding: 80px 62px;
+  }
+}
+@media (max-width: 499px) {
+  .question .swiper-slide .content button {
+    top: 154px;
+    left: 275px;
   }
 }
 @media (max-width: 480px) {
@@ -631,8 +803,8 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     font-size: 16px;
   }
 
-  .our_services .cards .card img {
-    max-width: 380px;
+  .moving .moving__content .moving__info p {
+    font-size: 14px;
   }
 
   .choosing {
@@ -655,7 +827,7 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     padding: 20px 0px;
   }
   .map .cyprus_map .cyprus_map_text {
-    width: 480px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .map img {
@@ -663,40 +835,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   }
   .map .examples {
     display: none;
-  }
-
-  .founder {
-    padding: 37px 0px;
-  }
-  .founder .founder_describing {
-    margin-left: 50px;
-  }
-  .founder .founder_describing .line {
-    margin-top: 24px;
-    width: 290px;
-    right: 233px;
-  }
-  .founder .founder_describing p {
-    width: 400px;
-  }
-  .founder .founder_card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 30px;
-    text-align: center;
-    margin: 23px auto 0px;
-    padding: 20px 50px;
-  }
-  .founder .founder_card .founder .founder_card .founder_card__name {
-    margin-left: 0;
   }
 
   .how_we_make {
@@ -734,5 +872,35 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
             flex-direction: column;
     gap: 10px;
     padding: 9px 52px 26px 60px;
+  }
+}
+@media (max-width: 423px) {
+  .question .swiper-slide .content button {
+    top: 132px;
+    left: 249px;
+  }
+
+  .map .cyprus_map .cyprus_map_text h3 {
+    font-size: 17px;
+  }
+
+  .map .cyprus_map .cyprus_map_text p {
+    font-size: 14px;
+  }
+
+  .map .cyprus_map img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 394px) {
+  .question .swiper-slide .content button {
+    top: 114px;
+    left: 207px;
+  }
+}
+@media (max-width: 354px) {
+  .question .swiper-slide .content button {
+    top: 98px;
+    left: 172px;
   }
 }

@@ -4,6 +4,7 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
         .menu__list > li {
             position: relative;
             a {
@@ -12,6 +13,18 @@ header {
             .menu-link {
                 color: #FFFFFF;
                 font-style: 16px;
+            }
+            .triangle_down {
+                position: relative;
+                top: -2px;
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-right: 0.1em solid #FFFFFF;
+                border-top: 0.1em solid #FFFFFF;
+                transform: rotate(135deg);
+                margin-left: 10px;
             }
         }
 

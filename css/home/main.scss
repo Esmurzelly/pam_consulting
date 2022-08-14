@@ -1,6 +1,8 @@
 @import "../style.css";
 
-
+html {
+    overflow-x: hidden;
+}
 
 .our_services {
     font-family: 'AvenirNextCyr-Medium';
@@ -28,6 +30,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
+        gap: 20px;
         .card {
             display: flex;
             flex-direction: column;
@@ -91,7 +94,7 @@
         max-width: 100%;
         
         img {
-            max-width: 30%;
+            max-width: 20%;
         }
         .moving__info {
             display: flex;
@@ -104,7 +107,7 @@
                 font-style: normal;
                 font-weight: 600;
                 font-size: 40px;
-                line-height: 29px;
+                line-height: 40px;
                 text-align: center;
                 text-transform: uppercase;  
                 color: #434364;
@@ -119,7 +122,7 @@
                 text-align: center;
                 letter-spacing: 0.5px;
                 color: #434364;
-                width: 483px;
+                max-width: 483px;
             }
             button {
                 margin-top: 28px;
@@ -144,7 +147,7 @@
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
-    max-width: 1440px;
+    max-width: 100%;
     padding: 80px 133px;
     
     .describe_choosing_cyprus {
@@ -357,7 +360,7 @@
             letter-spacing: 0.5px;
             margin-top: 30px;
             margin-right: 120px;
-            width: 480px;
+            max-width: 480px;
             &:nth-child(4) {
                 margin-top: 32px;
             }
@@ -433,7 +436,7 @@
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
-    max-width: 1440px;
+    max-width: 100%;
     padding: 80px 133px;
     h2 {
         font-family: 'Avenir Next';
@@ -442,6 +445,7 @@
         font-size: 36px;
         line-height: 40px;
         text-transform: uppercase;
+        text-align: center;
     }
     .how_we_make__types {
         margin-top: 60px;
@@ -450,7 +454,7 @@
         align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
         .how_we_make__type {
             display: flex;
             flex-direction: column;
@@ -518,6 +522,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
+    max-width: 100%;
     h2 {
         text-align: center;
         font-family: 'Avenir Next';
@@ -564,7 +569,6 @@
     }
     .line {
         width: 380px;
-        margin: 0 auto;
         margin-top: 20px;
         border: 2px solid #FDBFA3;
     }

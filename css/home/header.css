@@ -9,6 +9,9 @@ header .menu {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .menu .menu__list > li {
   position: relative;
@@ -19,6 +22,19 @@ header .menu .menu__list > li a {
 header .menu .menu__list > li .menu-link {
   color: #FFFFFF;
   font-style: 16px;
+}
+header .menu .menu__list > li .triangle_down {
+  position: relative;
+  top: -2px;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 0.1em solid #FFFFFF;
+  border-top: 0.1em solid #FFFFFF;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-left: 10px;
 }
 header .menu nav .hamb {
   display: none;

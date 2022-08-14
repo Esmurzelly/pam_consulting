@@ -1,4 +1,8 @@
 @import "../style.css";
+html {
+  overflow-x: hidden;
+}
+
 .our_services {
   font-family: "AvenirNextCyr-Medium";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.43%, #828CDE), color-stop(201.93%, #6D31D0));
@@ -37,6 +41,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 .our_services .cards .card {
   display: -webkit-box;
@@ -114,7 +119,7 @@
   max-width: 100%;
 }
 .moving .moving__content img {
-  max-width: 30%;
+  max-width: 20%;
 }
 .moving .moving__content .moving__info {
   display: -webkit-box;
@@ -137,7 +142,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 29px;
+  line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: #434364;
@@ -152,7 +157,7 @@
   text-align: center;
   letter-spacing: 0.5px;
   color: #434364;
-  width: 483px;
+  max-width: 483px;
 }
 .moving .moving__content .moving__info button {
   margin-top: 28px;
@@ -184,7 +189,7 @@
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-47.89%, #FEFC9E), color-stop(126.42%, #FDBFA3));
   background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
-  max-width: 1440px;
+  max-width: 100%;
   padding: 80px 133px;
 }
 .choosing .describe_choosing_cyprus {
@@ -465,7 +470,7 @@
   letter-spacing: 0.5px;
   margin-top: 30px;
   margin-right: 120px;
-  width: 480px;
+  max-width: 480px;
 }
 .founder .founder_describing p:nth-child(4) {
   margin-top: 32px;
@@ -557,7 +562,7 @@
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-47.89%, #FEFC9E), color-stop(126.42%, #FDBFA3));
   background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
-  max-width: 1440px;
+  max-width: 100%;
   padding: 80px 133px;
 }
 .how_we_make h2 {
@@ -567,6 +572,7 @@
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
+  text-align: center;
 }
 .how_we_make .how_we_make__types {
   margin-top: 60px;
@@ -585,7 +591,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 .how_we_make .how_we_make__types .how_we_make__type {
   display: -webkit-box;
@@ -673,6 +679,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
+  max-width: 100%;
 }
 .partners h2 {
   text-align: center;
@@ -736,7 +743,6 @@
 }
 .contact .line {
   width: 380px;
-  margin: 0 auto;
   margin-top: 20px;
   border: 2px solid #FDBFA3;
 }

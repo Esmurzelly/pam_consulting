@@ -1,8 +1,68 @@
+@media (max-width: 1434px) {
+    .contact .form form {
+        padding: 34px 73px;
+    }
+}
+
+@media (max-width: 1240px) {
+    header .menu {
+        .logo {
+            margin-left: 20px;
+        }
+        button {
+            margin-right: 20px;
+        }
+    }
+
+    .map {
+        padding: 81px 50px 10px 26px;
+    }
+}
+@media (max-width: 1167px) {
+    .map {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    } 
+}
+
+@media (max-width: 1020px) {
+    header .menu nav > ul > li {
+        font-size: 14px;
+    }
+    .moving .moving__content img {
+        max-width: 17%;
+    }
+}
+
 @media (max-width: 1000px) {
     // Burger menu
+   
     header .menu {
+        position: fixed;
+        top: 0px;
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+        z-index: 99;
         & .menu__list {
             display: none;
+
+            li .triangle_down {
+                position: relative;
+                top: 14px;
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-right: 0.1em solid #000;
+                border-top: 0.1em solid #000;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+                margin-left: 10px;
+            }
         }
         nav .hamb {
             display: flex;
@@ -74,10 +134,6 @@
         z-index: 100;
         display: flex;
         transition: 0.3s;
-        img {
-            /* change img to figure!!!! */
-            
-        }
     }
     .popup.open {
         left: 0;
@@ -98,6 +154,8 @@
     }    
 
 
+
+
     // switch burger and button
     header .menu {
         display: flex;
@@ -116,7 +174,9 @@
         }
     }
 
-
+    header .slider {
+        margin-top: 82px;
+    }
     
     // slider
     header .swiper {
@@ -271,9 +331,7 @@
     .moving {
         max-width: 1000px;
         .moving__content {
-            img {
-                max-width: 17%;
-            }
+          
             .moving__info {
                 margin: 0 20px;
             }
@@ -283,11 +341,7 @@
 
     // map
     .map {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 50px;
+        
         .cyprus_map {
             .cyprus_map_text {
                 display: block;
@@ -341,7 +395,11 @@
         padding: 16px 60px;
     }
 
-    
+
+    .question .swiper-slide .content button  {
+        top: 129px;
+        left: 235px;
+    }
 
     // footer 
     footer .footer_info{
@@ -349,8 +407,28 @@
     }
 }
 
+@media (max-width: 938px) {
+    .question .swiper-slide .content button  {
+        top: 119px;
+        left: 200px;
+    }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
+    .contact .form form {
+        padding: 16px 41px;
+        .form__data input {
+            padding: 12.5px 63px 10.5px 23px;
+        }
+    }
+}
+
+@media (max-width: 858px) {
+    .question .swiper-slide .content button  {
+        top: 100px;
+        left: 172px;
+        font-size: 14px;
+    }
     header .slider .swiper-slide .content {
         top: 110px;
         left: 46px;
@@ -377,6 +455,21 @@
         }
     }
 
+    .choosing .choosing__types {
+        gap: 30px;
+        .choosing__type {
+            max-width: 230px;
+            .describe_choosing__type {
+                width: 257px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
     .our_services {
         .cards {
             margin: 60px 130px 80px 130px;
@@ -414,17 +507,6 @@
             }
         }      
     }
-
-    .choosing .choosing__types {
-        gap: 30px;
-        .choosing__type {
-            max-width: 230px;
-            .describe_choosing__type {
-                width: 257px;
-            }
-        }
-    }
-
 
     .map .cyprus_map .cyprus_map_text p {
         font-weight: 400;
@@ -471,9 +553,14 @@
             .form__data {
                 & input {
                     padding: 12.5px 30px 10.5px 23px;
+                    flex-grow: 1;
                 }
             }
         }
+    }
+    
+    .founder {
+        padding: 37px 50px;
     }
 
     .question {
@@ -481,6 +568,82 @@
     }
 }
 
+@media (max-width: 755px) {
+    .choosing .choosing__types {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 683px) {
+    header .slider .swiper-slide .content .advertisement {
+        display: none;
+    }
+}
+
+@media (max-width: 617px) {
+    .our_services .cards .card img {
+        max-width: 380px;
+    }
+    
+    .founder .founder_describing .line {
+        right: 200px;
+    }
+    .how_we_make .how_we_make__types,
+    .choosing .choosing__types {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 566px) {
+    .question .swiper-slide .content button {
+        top: 88px;
+        left: 147px;
+        font-size: 12px;
+    }
+
+    .founder {
+        padding: 37px 0px;
+        .founder_describing {
+            margin-left: 25px;
+            
+            .line {
+                margin-top: 24px;
+                width: 290px;
+                right: 120px;
+            }
+            p {
+                max-width: 270px;
+                margin-right: 0px;
+            }
+        }
+        
+        .founder_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
+            margin: 23px auto 0px;
+            padding: 20px 50px;
+            
+            .founder .founder_card .founder_card__name {
+                margin-left: 0;
+            }
+        }
+    }
+    .contact {
+        padding: 80px 62px;
+    }
+}
+
+@media (max-width: 499px) {
+    .question .swiper-slide .content button {
+        top: 154px;
+        left: 275px;
+    }
+}
 
 @media (max-width: 480px) {
     header {
@@ -553,9 +716,8 @@
         }
     }
 
-
-    .our_services .cards .card img {
-        max-width: 380px;
+    .moving .moving__content .moving__info p {
+        font-size: 14px;
     }
 
     .choosing {
@@ -578,7 +740,7 @@
     .map  {
         padding: 20px 0px;
         .cyprus_map .cyprus_map_text {
-            width: 480px;
+            max-width: 100%;
             margin: 0 auto;
         }
         img {
@@ -589,34 +751,7 @@
         }
     }
     
-    .founder {
-        padding: 37px 0px;
-        .founder_describing {
-            margin-left: 50px;
-            .line {
-                margin-top: 24px;
-                width: 290px;
-                right: 233px;
-            }
-            p {
-                width: 400px; 
-            }
-        }
-        
-        .founder_card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 30px;
-            text-align: center;
-            margin: 23px auto 0px;
-            padding: 20px 50px;
-            
-            .founder .founder_card .founder_card__name {
-                margin-left: 0;
-            }
-        }
-    }
+    
 
     .how_we_make {
         padding: 80px 50px;
@@ -653,7 +788,34 @@
             padding: 9px 52px 26px 60px;
         }
     } 
+}
 
+@media (max-width: 423px) {
+    .question .swiper-slide .content button {
+        top: 132px;
+        left: 249px;
+    }
+    .map .cyprus_map .cyprus_map_text h3 {
+        font-size: 17px;
+    }
+    .map .cyprus_map .cyprus_map_text p {
+        font-size: 14px;
+    }
+    .map .cyprus_map img {
+        max-width: 80%;
+    }
+}
 
+@media (max-width: 394px) {
+    .question .swiper-slide .content button {
+        top: 114px;
+        left: 207px;
+    }
+}
 
+@media (max-width: 354px) {
+    .question .swiper-slide .content button {
+        top: 98px;
+        left: 172px;
+    }
 }

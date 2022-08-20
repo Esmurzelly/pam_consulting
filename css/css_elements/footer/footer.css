@@ -19,7 +19,7 @@ footer .footer_info {
   padding: 37px 141px 43px 434px;
 }
 footer .footer_info p {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -27,4 +27,23 @@ footer .footer_info p {
   text-align: center;
   letter-spacing: 0.5px;
   color: #FFFFFF;
+}
+
+@media (max-width: 1000px) {
+  footer .footer_info {
+    padding: 9px 52px 26px 175px;
+  }
+}
+@media (max-width: 480px) {
+  footer .footer_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    padding: 9px 52px 26px 60px;
+  }
 }

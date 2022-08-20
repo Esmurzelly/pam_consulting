@@ -8,7 +8,7 @@ footer {
         color: #FFFFFF;
         padding: 37px 141px 43px 434px;
         p {
-            font-family: 'Avenir Next';
+            font-family: 'AvenirNextCyr-Medium';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -18,4 +18,21 @@ footer {
             color: #FFFFFF;  
         }
     }
+}
+
+@media (max-width: 1000px) {
+    footer .footer_info{
+        padding: 9px 52px 26px 175px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        .footer_info {   
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 9px 52px 26px 60px;
+        }
+    } 
 }

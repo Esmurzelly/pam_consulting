@@ -4,13 +4,6 @@
   }
 }
 @media (max-width: 1240px) {
-  header .menu .logo {
-    margin-left: 20px;
-  }
-  header .menu button {
-    margin-right: 20px;
-  }
-
   .map {
     padding: 81px 50px 10px 26px;
   }
@@ -33,189 +26,7 @@
     gap: 50px;
   }
 }
-@media (max-width: 1020px) {
-  header .menu nav > ul > li {
-    font-size: 14px;
-  }
-
-  .moving .moving__content img {
-    max-width: 17%;
-  }
-}
 @media (max-width: 1000px) {
-  header .menu {
-    position: fixed;
-    top: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    width: 100%;
-    z-index: 99;
-  }
-  header .menu .menu__list {
-    display: none;
-  }
-  header .menu .menu__list li .triangle_down {
-    position: relative;
-    top: 14px;
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-right: 0.1em solid #000;
-    border-top: 0.1em solid #000;
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-    margin-left: 10px;
-  }
-  header .menu nav .hamb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .menu .popup .menu__list {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding: 40px 0;
-    overflow: auto;
-  }
-  header .menu .popup .menu__list li, header .menu .popup .menu__list a {
-    margin-top: 9px;
-  }
-  header .menu .popup .menu__list li {
-    width: 100%;
-    margin-right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 20px 0;
-    text-decoration: none;
-    font-family: "Avenir Next";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #434364;
-  }
-  header .menu .popup .menu__list li a {
-    color: #434364;
-  }
-  header .menu .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 6px auto;
-    background-color: #fff;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  header .menu .hamb__field.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  header .menu .hamb__field.active .bar:nth-child(1) {
-    -webkit-transform: translateY(9px) rotate(45deg);
-            transform: translateY(9px) rotate(45deg);
-  }
-  header .menu .hamb__field.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-9px) rotate(-45deg);
-            transform: translateY(-9px) rotate(-45deg);
-  }
-
-  body.noscroll {
-    overflow: hidden;
-  }
-
-  .menu .popup {
-    position: fixed;
-    top: 75px;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 100;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-
-  .popup.open {
-    left: 0;
-    z-index: 100;
-  }
-  .popup.open .menu__list .menu__sub-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 100%;
-    left: 120px;
-    border: 1px solid #434364;
-    color: #000;
-    max-width: 200px;
-    padding: 15px;
-  }
-
-  header .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 0px;
-  }
-  header .menu .logo {
-    margin-left: 0px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  header .menu nav {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  header .menu button {
-    margin-right: 0;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-
   header .slider {
     margin-top: 82px;
   }
@@ -397,7 +208,7 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     margin-bottom: 10px;
   }
   .map .cyprus_map .cyprus_map_text h3 {
-    font-family: "Avenir Next";
+    font-family: "AvenirNextCyr-Medium";
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -439,41 +250,8 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .founder .founder_describing p {
     width: 600px;
   }
-
-  .contact .form form {
-    padding: 16px 60px;
-  }
-
-  .question .swiper-slide .content button {
-    top: 129px;
-    left: 235px;
-  }
-
-  footer .footer_info {
-    padding: 9px 52px 26px 175px;
-  }
-}
-@media (max-width: 938px) {
-  .question .swiper-slide .content button {
-    top: 119px;
-    left: 200px;
-  }
-}
-@media (max-width: 920px) {
-  .contact .form form {
-    padding: 16px 41px;
-  }
-  .contact .form form .form__data input {
-    padding: 12.5px 63px 10.5px 23px;
-  }
 }
 @media (max-width: 858px) {
-  .question .swiper-slide .content button {
-    top: 100px;
-    left: 172px;
-    font-size: 14px;
-  }
-
   header .slider .swiper-slide .content {
     top: 110px;
     left: 46px;
@@ -597,40 +375,8 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     display: none;
   }
 
-  .contact .form {
-    max-width: 100%;
-    margin-top: 60px;
-  }
-  .contact .form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    max-width: 580px;
-    padding: 9px 14px;
-  }
-  .contact .form form .form__data input {
-    padding: 12.5px 30px 10.5px 23px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-
   .founder {
     padding: 37px 50px;
-  }
-
-  .question {
-    padding: 64px 28px 1px 5px;
   }
 }
 @media (max-width: 755px) {
@@ -670,12 +416,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   }
 }
 @media (max-width: 566px) {
-  .question .swiper-slide .content button {
-    top: 88px;
-    left: 147px;
-    font-size: 12px;
-  }
-
   .founder {
     padding: 37px 0px;
   }
@@ -715,41 +455,7 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     padding: 80px 62px;
   }
 }
-@media (max-width: 499px) {
-  .question .swiper-slide .content button {
-    top: 154px;
-    left: 275px;
-  }
-}
 @media (max-width: 480px) {
-  header .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 0px;
-  }
-  header .menu .logo {
-    margin-left: 0px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  header .menu nav {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  header .menu button {
-    margin-right: 0;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-
   header .slider .swiper .swiper-wrapper .swiper-slide_1 .content .advertisement {
     display: none;
   }
@@ -850,36 +556,8 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .how_we_make .how_we_make__types .how_we_make__type .describe_choosing__type {
     width: 173px;
   }
-
-  .contact {
-    padding: 80px 40px;
-  }
-  .contact .form form .form__data input {
-    width: 100%;
-  }
-
-  .question {
-    padding: 64px 28px 1px 42px;
-  }
-
-  footer .footer_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10px;
-    padding: 9px 52px 26px 60px;
-  }
 }
 @media (max-width: 423px) {
-  .question .swiper-slide .content button {
-    top: 132px;
-    left: 249px;
-  }
-
   .map .cyprus_map .cyprus_map_text h3 {
     font-size: 17px;
   }
@@ -890,17 +568,5 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
 
   .map .cyprus_map img {
     max-width: 80%;
-  }
-}
-@media (max-width: 394px) {
-  .question .swiper-slide .content button {
-    top: 114px;
-    left: 207px;
-  }
-}
-@media (max-width: 354px) {
-  .question .swiper-slide .content button {
-    top: 98px;
-    left: 172px;
   }
 }

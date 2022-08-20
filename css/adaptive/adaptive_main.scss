@@ -5,15 +5,6 @@
 }
 
 @media (max-width: 1240px) {
-    header .menu {
-        .logo {
-            margin-left: 20px;
-        }
-        button {
-            margin-right: 20px;
-        }
-    }
-
     .map {
         padding: 81px 50px 10px 26px;
     }
@@ -28,152 +19,7 @@
     } 
 }
 
-@media (max-width: 1020px) {
-    header .menu nav > ul > li {
-        font-size: 14px;
-    }
-    .moving .moving__content img {
-        max-width: 17%;
-    }
-}
-
-@media (max-width: 1000px) {
-    // Burger menu
-   
-    header .menu {
-        position: fixed;
-        top: 0px;
-        display: flex;
-        flex-grow: 1;
-        width: 100%;
-        z-index: 99;
-        & .menu__list {
-            display: none;
-
-            li .triangle_down {
-                position: relative;
-                top: 14px;
-                content: "";
-                display: inline-block;
-                width: 8px;
-                height: 8px;
-                border-right: 0.1em solid #000;
-                border-top: 0.1em solid #000;
-                -webkit-transform: rotate(135deg);
-                transform: rotate(135deg);
-                margin-left: 10px;
-            }
-        }
-        nav .hamb {
-            display: flex;
-            align-items: center;
-        }
-        .popup {
-            .menu__list {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: start;
-                padding: 40px 0;
-                overflow: auto;
-                li, a {
-                    margin-top: 9px;
-                }
-                li {
-                    width: 100%;
-                    margin-right: 0;
-                    display: flex;
-                    justify-content: center;
-                    padding: 20px 0;
-                    text-decoration: none;
-                    font-family: 'Avenir Next';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 140%;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: #434364;
-                    a {color: #434364;}
-                }
-            }
-        }
-        .bar {
-            display: block;
-            width: 30px;
-            height: 3px;
-            margin: 6px auto;
-            background-color: #fff;
-            transition: .4s;
-        }
-        .hamb__field.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-        .hamb__field.active .bar:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
-        }
-        .hamb__field.active .bar:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-        }
-    }
-
-    
-    body.noscroll {
-        overflow: hidden;
-    }
-
-    .menu .popup {
-        position: fixed;
-        top: 75px;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
-        z-index: 100;
-        display: flex;
-        transition: 0.3s;
-    }
-    .popup.open {
-        left: 0;
-        z-index: 100;
-
-        .menu__list .menu__sub-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: absolute;
-            top: 100%;
-            left: 120px;
-            border: 1px solid #434364;
-            color: #000;
-            max-width: 200px;
-            padding: 15px;
-        }
-    }    
-
-
-
-
-    // switch burger and button
-    header .menu {
-        display: flex;
-        flex-direction: row;
-        padding: 0px;
-        .logo {
-            margin-left: 0px;
-            order: 1;
-        }
-        nav {
-            order: 3;
-        }
-        button {
-            margin-right: 0;
-            order: 2;
-        }
-    }
-
+@media (max-width: 1000px) {  
     header .slider {
         margin-top: 82px;
     }
@@ -348,7 +194,7 @@
                 text-align: center;
                 margin-bottom: 10px;
                 h3 {
-                    font-family: 'Avenir Next';
+                    font-family: 'AvenirNextCyr-Medium';
                     font-style: normal;
                     font-weight: 600;
                     font-size: 28px;
@@ -390,45 +236,16 @@
         }
     }
 
-    // contact
-    .contact .form form {
-        padding: 16px 60px;
-    }
+    
 
-
-    .question .swiper-slide .content button  {
-        top: 129px;
-        left: 235px;
-    }
-
-    // footer 
-    footer .footer_info{
-            padding: 9px 52px 26px 175px;
-    }
 }
 
-@media (max-width: 938px) {
-    .question .swiper-slide .content button  {
-        top: 119px;
-        left: 200px;
-    }
-}
 
-@media (max-width: 920px) {
-    .contact .form form {
-        padding: 16px 41px;
-        .form__data input {
-            padding: 12.5px 63px 10.5px 23px;
-        }
-    }
-}
+
+
 
 @media (max-width: 858px) {
-    .question .swiper-slide .content button  {
-        top: 100px;
-        left: 172px;
-        font-size: 14px;
-    }
+    
     header .slider .swiper-slide .content {
         top: 110px;
         left: 46px;
@@ -539,33 +356,13 @@
     }
 
 
-    .contact .form {
-        max-width: 100%;
-        margin-top: 60px;
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 580px;
-            padding: 9px 14px;
-            
-            .form__data {
-                & input {
-                    padding: 12.5px 30px 10.5px 23px;
-                    flex-grow: 1;
-                }
-            }
-        }
-    }
+    
     
     .founder {
         padding: 37px 50px;
     }
 
-    .question {
-        padding: 64px 28px 1px 5px;
-    }
+    
 }
 
 @media (max-width: 755px) {
@@ -597,11 +394,7 @@
 }
 
 @media (max-width: 566px) {
-    .question .swiper-slide .content button {
-        top: 88px;
-        left: 147px;
-        font-size: 12px;
-    }
+    
 
     .founder {
         padding: 37px 0px;
@@ -638,33 +431,9 @@
     }
 }
 
-@media (max-width: 499px) {
-    .question .swiper-slide .content button {
-        top: 154px;
-        left: 275px;
-    }
-}
 
-@media (max-width: 480px) {
-    header {
-        .menu {
-            display: flex;
-            flex-direction: row;
-            padding: 0px;
-            .logo {
-                margin-left: 0px;
-                order: 1;
-            }
-            nav {
-                order: 3;
-            }
-            button {
-                margin-right: 0;
-                order: 2;
-            }
-        }
-    }
-    
+
+@media (max-width: 480px) {    
     header .slider .swiper .swiper-wrapper .swiper-slide_1 .content .advertisement {
         display: none;
     }
@@ -766,35 +535,9 @@
             }
         } 
     }
-
-    .contact {
-        padding: 80px 40px;
-
-        .form form .form__data input {
-            width: 100%;
-        }
-    }
-
-    .question {
-        padding: 64px 28px 1px 42px;
-    }
-
-
-    footer {
-        .footer_info {   
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 9px 52px 26px 60px;
-        }
-    } 
 }
 
 @media (max-width: 423px) {
-    .question .swiper-slide .content button {
-        top: 132px;
-        left: 249px;
-    }
     .map .cyprus_map .cyprus_map_text h3 {
         font-size: 17px;
     }
@@ -806,16 +549,3 @@
     }
 }
 
-@media (max-width: 394px) {
-    .question .swiper-slide .content button {
-        top: 114px;
-        left: 207px;
-    }
-}
-
-@media (max-width: 354px) {
-    .question .swiper-slide .content button {
-        top: 98px;
-        left: 172px;
-    }
-}

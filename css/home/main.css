@@ -1,5 +1,5 @@
 @import "../style.css";
-html {
+body {
   overflow-x: hidden;
 }
 
@@ -198,7 +198,7 @@ html {
   max-width: 580px;
 }
 .choosing .describe_choosing_cyprus h2 {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -207,7 +207,7 @@ html {
 }
 .choosing .describe_choosing_cyprus p {
   margin-top: 20px;
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -293,7 +293,7 @@ html {
   color: #6D31D0;
 }
 .choosing .choosing__types .choosing__type .describe_choosing__type p {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -336,7 +336,7 @@ html {
   margin-bottom: 100px;
 }
 .map .cyprus_map .cyprus_map_text h3 {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -394,7 +394,7 @@ html {
 }
 .map .examples .examples_describing p {
   margin-top: 10px;
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -445,7 +445,7 @@ html {
   position: relative;
 }
 .founder .founder_describing h2 {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -462,7 +462,7 @@ html {
   right: 280px;
 }
 .founder .founder_describing p {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -523,7 +523,7 @@ html {
 }
 .founder .founder_card .founder_card__name p {
   margin-top: 15px;
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -566,7 +566,7 @@ html {
   padding: 80px 133px;
 }
 .how_we_make h2 {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -651,7 +651,7 @@ html {
   color: #6D31D0;
 }
 .how_we_make .how_we_make__types .how_we_make__type .describe_choosing__type p {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -683,7 +683,7 @@ html {
 }
 .partners h2 {
   text-align: center;
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -711,334 +711,4 @@ html {
 }
 .partners .images_of_partners img {
   cursor: pointer;
-}
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 80px 130px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(109, 49, 208, 0.1)), color-stop(28.65%, rgba(109, 49, 208, 0.21)), color-stop(53.12%, rgba(109, 49, 208, 0.475)), to(#6D31D0));
-  background: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
-}
-.contact h2 {
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #434364;
-}
-.contact .line {
-  width: 380px;
-  margin-top: 20px;
-  border: 2px solid #FDBFA3;
-}
-.contact .contact__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.contact .contact__info div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 20px;
-}
-.contact .contact__info div img {
-  padding: 6px;
-  background: -webkit-gradient(linear, left top, right top, from(#6D31D0), color-stop(104.7%, #AB80EF));
-  background: linear-gradient(90deg, #6D31D0 0%, #AB80EF 104.7%);
-  border-radius: 20px;
-}
-.contact .contact__info div p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
-  color: #6D31D0;
-  margin-top: 20px;
-}
-.contact .form {
-  max-width: 100%;
-  margin-top: 60px;
-}
-.contact .form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 580px;
-  background-color: rgb(255, 219, 128);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  -webkit-backdrop-filter: blur(500px);
-          backdrop-filter: blur(500px);
-  border-radius: 60px;
-  padding: 34px 300px;
-}
-.contact .form form h3 {
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #434364;
-}
-.contact .form form .form__data {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 10px;
-}
-.contact .form form .form__data input {
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
-          box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
-  border-radius: 20px;
-  padding: 12.5px 80px 10.5px 23px;
-  border: none;
-}
-.contact .form form .form__data .email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 200px;
-  border-radius: 10px;
-  border: none;
-}
-.contact .form form .form__data .email::-webkit-input-placeholder {
-  padding: 10px;
-}
-.contact .form form .form__data .email::-moz-placeholder {
-  padding: 10px;
-}
-.contact .form form .form__data .email:-ms-input-placeholder {
-  padding: 10px;
-}
-.contact .form form .form__data .email::-ms-input-placeholder {
-  padding: 10px;
-}
-.contact .form form .form__data .email::placeholder {
-  padding: 10px;
-}
-.contact .form form .privacy_policy {
-  margin-top: 20px;
-}
-.contact .form form .privacy_policy input {
-  border: 1px solid #FFFFFF;
-  border-radius: 4px;
-  margin-right: 20px;
-}
-.contact .form form .privacy_policy span {
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #434364;
-}
-.contact .form form button {
-  margin-top: 32px;
-  padding: 18px 34px;
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 120%;
-  text-align: center;
-  color: #6D31D0;
-  background: #FFDB80;
-  -webkit-box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
-          box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
-  border-radius: 30px;
-  opacity: 1;
-  border: none;
-}
-
-.question {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6D31D0), to(#828CDE));
-  background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
-  padding: 80px 130px 84px 130px;
-}
-.question h2 {
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 60px;
-}
-.question .swiper {
-  height: 100%;
-  padding-bottom: 60px;
-}
-.question .swiper-slide .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
-          box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
-  max-width: 380px;
-}
-.question .swiper-slide .content img {
-  position: relative;
-  max-width: 380px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-right-radius: 10%;
-  border-top-left-radius: 10%;
-}
-.question .swiper-slide .content button {
-  position: absolute;
-  top: 151px;
-  left: 260px;
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: right;
-  letter-spacing: 0.5px;
-  color: #FFFFFF;
-  background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
-  -webkit-box-shadow: 0px 2.7141px 5.42821px rgba(28, 37, 44, 0.08);
-          box-shadow: 0px 2.7141px 5.42821px rgba(28, 37, 44, 0.08);
-  border-radius: 20px;
-  border: none;
-  padding: 3px 10.5px;
-}
-.question .swiper-slide .content .content_describing {
-  padding: 10px 30px 40px 30px;
-  background: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-}
-.question .swiper-slide .content .content_describing h4 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
-  color: #6D31D0;
-  margin: 10px auto;
-}
-.question .swiper-slide .content .content_describing p {
-  font-family: "Avenir Next";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: #434364;
-}
-.question .swiper {
-  width: 100%;
-  height: 100%;
-}
-.question .swiper-pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.question .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  color: transparent;
-  opacity: 1;
-  border: 2px solid white;
-  background-color: transparent;
-}
-.question .swiper-pagination-bullet-active {
-  color: #fff;
-  background: #FFFFFF;
-  width: 12px;
-  height: 12px;
 }

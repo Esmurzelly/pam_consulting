@@ -1,6 +1,6 @@
 @import "../style.css";
 
-html {
+body {
     overflow-x: hidden;
 }
 
@@ -155,7 +155,7 @@ html {
         color: #434364;
         max-width: 580px;
         h2 {
-            font-family: 'Avenir Next';
+            font-family: 'AvenirNextCyr-Medium';
             font-style: normal;
             font-weight: 600;
             font-size: 36px;
@@ -164,7 +164,7 @@ html {
         }
         p {
             margin-top: 20px;
-            font-family: 'Avenir Next';
+            font-family: 'AvenirNextCyr-Medium';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -225,7 +225,7 @@ html {
                     color: #6D31D0;
                 }
                 p {
-                    font-family: 'Avenir Next';
+                    font-family: 'AvenirNextCyr-Medium';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
@@ -254,7 +254,7 @@ html {
             display: block;
             margin-bottom: 100px;
             h3 {
-                font-family: 'Avenir Next';
+                font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 28px;
@@ -302,7 +302,7 @@ html {
             }
             p {
                 margin-top: 10px;
-                font-family: 'Avenir Next';
+                font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
@@ -335,7 +335,7 @@ html {
         align-items: flex-start;
         position: relative;
         h2 { 
-            font-family: 'Avenir Next';
+            font-family: 'AvenirNextCyr-Medium';
             font-style: normal;
             font-weight: 600;
             font-size: 36px;
@@ -352,7 +352,7 @@ html {
             right: 280px;
         }
         p {
-            font-family: 'Avenir Next';
+            font-family: 'AvenirNextCyr-Medium';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -404,7 +404,7 @@ html {
             }
             p {
                 margin-top: 15px;
-                font-family: 'Avenir Next';
+                font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -439,7 +439,7 @@ html {
     max-width: 100%;
     padding: 80px 133px;
     h2 {
-        font-family: 'Avenir Next';
+        font-family: 'AvenirNextCyr-Medium';
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
@@ -499,7 +499,7 @@ html {
                     color: #6D31D0;
                 }
                 p {
-                    font-family: 'Avenir Next';
+                    font-family: 'AvenirNextCyr-Medium';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
@@ -525,7 +525,7 @@ html {
     max-width: 100%;
     h2 {
         text-align: center;
-        font-family: 'Avenir Next';
+        font-family: 'AvenirNextCyr-Medium';
         font-style: normal;
         font-weight: 600;
         font-size: 36px;
@@ -548,249 +548,3 @@ html {
         }
     }
 }
-
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 130px;
-    background: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
-    h2  {
-        font-family: 'Avenir Next';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 40px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #434364;
-    }
-    .line {
-        width: 380px;
-        margin-top: 20px;
-        border: 2px solid #FDBFA3;
-    }
-    .contact__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-            & img {
-                padding: 6px;
-                background: linear-gradient(90deg, #6D31D0 0%, #AB80EF 104.7%);
-                border-radius: 20px;
-            }
-            & p {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 32px;
-                color: #6D31D0;
-                margin-top: 20px;
-            }
-        }
-    }
-    .form {
-        max-width: 100%;
-        margin-top: 60px;
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 580px;
-            background-color: rgba(255, 219, 128, 1);
-            mix-blend-mode: normal;
-            opacity: 0.5;
-            backdrop-filter: blur(500px);
-            border-radius: 60px;
-            padding: 34px 300px;
-            & h3 {
-                font-family: 'Avenir Next';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 28px;
-                line-height: 32px;
-                text-transform: uppercase;
-                color: #434364;
-            }
-            .form__data {
-                margin-top: 20px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                gap: 10px;
-                & input {
-                    background: #FFFFFF;
-                    box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
-                    border-radius: 20px;
-                    padding: 12.5px 80px 10.5px 23px;
-                    border: none;
-                }
-                & .email {
-                    display: flex;
-                    flex-grow: 1;
-                    height: 200px;
-                    border-radius: 10px;
-                    border: none;
-                    &::placeholder {
-                        padding: 10px;
-                    }
-                }
-            }
-            .privacy_policy {
-                margin-top: 20px;
-                & input {
-                    border: 1px solid #FFFFFF;
-                    border-radius: 4px;
-                    margin-right: 20px;
-                }
-                & span {
-                    font-family: 'Avenir Next';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: 0.5px;
-                    color: #434364;
-                }
-            }
-            button {
-                margin-top: 32px;
-                padding: 18px 34px;
-                font-family: 'Avenir Next';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 120%;
-                text-align: center;
-                color: #6D31D0;
-                background: #FFDB80;
-                box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
-                border-radius: 30px;
-                opacity: 1;
-                border: none;
-            }
-        }
-    }
-}
-
-.question {
-    background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
-    padding: 80px 130px 84px 130px;
-    h2 {
-        font-family: 'Avenir Next';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 40px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        margin-bottom: 60px;
-    }
-    .swiper {
-        height: 100%;
-        padding-bottom: 60px;
-    }
-    & .swiper-slide .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);   
-        max-width: 380px;
-        
-        img {
-            position: relative;
-            max-width: 380px;
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-top-right-radius: 10%;
-            border-top-left-radius: 10%;
-        }
-        button {
-            position: absolute;
-            top: 151px;
-            left: 260px;
-
-            font-family: 'Avenir Next';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: right;
-            letter-spacing: 0.5px;
-            color: #FFFFFF;
-            background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
-            box-shadow: 0px 2.7141px 5.42821px rgba(28, 37, 44, 0.08);
-            border-radius: 20px;
-            border: none;
-            padding: 3px 10.5px;
-        }
-        .content_describing {
-            padding: 10px 30px 40px 30px;
-            background: #FFFFFF;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            border-bottom-right-radius: 10%;
-            border-bottom-left-radius: 10%;
-            h4 {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 32px;
-                color: #6D31D0;
-                margin: 10px auto;
-            }
-            p {
-                font-family: 'Avenir Next';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.5px;
-                color: #434364;
-            }
-        }
-    }
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-
-      .swiper-pagination {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .swiper-pagination-bullet {
-        width: 8px;
-        height: 8px;
-        color: transparent;
-        opacity: 1;
-        border: 2px solid white;
-        background-color: transparent;
-    }
-      .swiper-pagination-bullet-active {
-        color:#fff;
-        background: #FFFFFF;
-        width: 12px;
-        height: 12px;
-    }
-}
-
-

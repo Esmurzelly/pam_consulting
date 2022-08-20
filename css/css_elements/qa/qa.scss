@@ -1,0 +1,181 @@
+.question {
+    background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
+    padding: 80px 130px 84px 130px;
+    h2 {
+        font-family: 'AvenirNextCyr-Medium';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+    }
+    .swiper {
+        height: 100%;
+        padding-bottom: 60px;
+    }
+    & .swiper-slide .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);   
+        max-width: 380px;
+        
+        img {
+            position: relative;
+            max-width: 380px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 10%;
+            border-top-left-radius: 10%;
+        }
+        button {
+            position: absolute;
+            top: 151px;
+            left: 260px;
+
+            font-family: 'AvenirNextCyr-Medium';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: right;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+            box-shadow: 0px 2.7141px 5.42821px rgba(28, 37, 44, 0.08);
+            border-radius: 20px;
+            border: none;
+            padding: 3px 10.5px;
+        }
+        .content_describing {
+            padding: 10px 30px 40px 30px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom-right-radius: 10%;
+            border-bottom-left-radius: 10%;
+            h4 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                color: #6D31D0;
+                margin: 10px auto;
+            }
+            p {
+                font-family: 'AvenirNextCyr-Medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: #434364;
+            }
+        }
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+      .swiper-pagination {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        color: transparent;
+        opacity: 1;
+        border: 2px solid white;
+        background-color: transparent;
+    }
+      .swiper-pagination-bullet-active {
+        color:#fff;
+        background: #FFFFFF;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+@media (max-width: 1000px) {  
+    // contact
+    
+    .question .swiper-slide .content button  {
+        top: 129px;
+        left: 235px;
+    }
+}
+
+@media (max-width: 938px) {
+    .question .swiper-slide .content button  {
+        top: 119px;
+        left: 200px;
+    }
+}
+
+@media (max-width: 858px) {
+    .question .swiper-slide .content button  {
+        top: 100px;
+        left: 172px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .question {
+        padding: 64px 28px 1px 5px;
+    }
+}
+
+@media (max-width: 566px) {
+    .question .swiper-slide .content button {
+        top: 88px;
+        left: 147px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 499px) {
+    .question .swiper-slide .content button {
+        top: 154px;
+        left: 275px;
+    }
+}
+
+@media (max-width: 480px) {    
+    .question {
+        padding: 64px 28px 1px 42px;
+    }
+}
+
+@media (max-width: 423px) {
+    .question .swiper-slide .content button {
+        top: 132px;
+        left: 249px;
+    }
+}
+
+@media (max-width: 394px) {
+    .question .swiper-slide .content button {
+        top: 114px;
+        left: 207px;
+    }
+}
+
+@media (max-width: 354px) {
+    .question .swiper-slide .content button {
+        top: 98px;
+        left: 172px;
+    }
+}

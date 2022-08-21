@@ -1,9 +1,9 @@
-.question {
+body .question {
   background: -webkit-gradient(linear, left top, left bottom, from(#6D31D0), to(#828CDE));
   background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
   padding: 80px 130px 84px 130px;
 }
-.question h2 {
+body .question h2 {
   font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
@@ -14,11 +14,11 @@
   color: #FFFFFF;
   margin-bottom: 60px;
 }
-.question .swiper {
+body .question .swiper {
   height: 100%;
   padding-bottom: 60px;
 }
-.question .swiper-slide .content {
+body .question .swiper-slide .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +33,7 @@
           box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
   max-width: 380px;
 }
-.question .swiper-slide .content img {
+body .question .swiper-slide .content img {
   position: relative;
   max-width: 380px;
   display: block;
@@ -44,7 +44,7 @@
   border-top-right-radius: 10%;
   border-top-left-radius: 10%;
 }
-.question .swiper-slide .content button {
+body .question .swiper-slide .content button {
   position: absolute;
   top: 151px;
   left: 260px;
@@ -63,7 +63,7 @@
   border: none;
   padding: 3px 10.5px;
 }
-.question .swiper-slide .content .content_describing {
+body .question .swiper-slide .content .content_describing {
   padding: 10px 30px 40px 30px;
   background: #FFFFFF;
   display: -webkit-box;
@@ -79,7 +79,7 @@
   border-bottom-right-radius: 10%;
   border-bottom-left-radius: 10%;
 }
-.question .swiper-slide .content .content_describing h4 {
+body .question .swiper-slide .content .content_describing h4 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -88,7 +88,7 @@
   color: #6D31D0;
   margin: 10px auto;
 }
-.question .swiper-slide .content .content_describing p {
+body .question .swiper-slide .content .content_describing p {
   font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
@@ -97,11 +97,11 @@
   letter-spacing: 0.5px;
   color: #434364;
 }
-.question .swiper {
+body .question .swiper {
   width: 100%;
   height: 100%;
 }
-.question .swiper-pagination {
+body .question .swiper-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +116,7 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.question .swiper-pagination-bullet {
+body .question .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   color: transparent;
@@ -124,69 +124,68 @@
   border: 2px solid white;
   background-color: transparent;
 }
-.question .swiper-pagination-bullet-active {
+body .question .swiper-pagination-bullet-active {
   color: #fff;
   background: #FFFFFF;
   width: 12px;
   height: 12px;
 }
-
 @media (max-width: 1000px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 129px;
     left: 235px;
   }
 }
 @media (max-width: 938px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 119px;
     left: 200px;
   }
 }
 @media (max-width: 858px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 100px;
     left: 172px;
     font-size: 14px;
   }
 }
 @media (max-width: 768px) {
-  .question {
+  body .question {
     padding: 64px 28px 1px 5px;
   }
 }
 @media (max-width: 566px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 88px;
     left: 147px;
     font-size: 12px;
   }
 }
 @media (max-width: 499px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 154px;
     left: 275px;
   }
 }
 @media (max-width: 480px) {
-  .question {
+  body .question {
     padding: 64px 28px 1px 42px;
   }
 }
 @media (max-width: 423px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 132px;
     left: 249px;
   }
 }
 @media (max-width: 394px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 114px;
     left: 207px;
   }
 }
 @media (max-width: 354px) {
-  .question .swiper-slide .content button {
+  body .question .swiper-slide .content button {
     top: 98px;
     left: 172px;
   }

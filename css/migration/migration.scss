@@ -1,0 +1,144 @@
+@import "../css_elements/footer/footer.css";
+@import "../css_elements/form/form.css";
+@import "../css_elements/menu/menu.css";
+@import "../css_elements/qa/qa.css";
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    .moving {
+        background: url("/img/migration/unsplash_Fs3tnxNGutk.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right top;
+        width: 100%;
+        height: 530px;
+        position: relative;
+        overflow: hidden;
+        &::after {
+            content: "";
+            display: block;
+            width: 513px;
+            height: 623px;
+            position: absolute;
+            top: -31px;
+            left: -35px;
+            background-image: -webkit-gradient(linear, right top, left top, from(#ffffff), to(#ffffff));
+            background-image: linear-gradient(to left, #ffffff, #ffffff);
+            opacity: 1;
+            filter: blur(25px);
+        }
+        p {
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            z-index: 2;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
+            color: #434364;
+            text-transform: uppercase;
+        }
+    }
+
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 130px;
+        gap: 53px;
+        .type_benefit {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            gap: 20px;
+            &:nth-child(2) {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            h3 {
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 32px;
+                text-transform: uppercase;
+                color: #434364;
+            }
+            
+            p,
+            li {
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: #434364;
+            }
+            .text {
+                flex-basis: 580px;
+            }
+            .image {
+                max-width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+        .help__info {
+            max-width: 1000px;
+            h2 {
+                margin-top: 80px;
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #434364;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 5px;
+            }
+            p {
+                margin-top: 20px;
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.5px;
+                color: #434364;
+                &:last-child {
+                    margin-bottom: 80px;
+                }
+            }
+        }
+        
+
+    }
+
+
+    
+}

@@ -1,0 +1,41 @@
+@import "../css_elements/menu/menu.css";
+@import "../css_elements/footer/footer.css";
+@import url("../style.css");
+body .main {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 780px;
+}
+body .main p {
+  font-family: "AvenirNextCyr-Medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #585779;
+}
+body .main a {
+  font-weight: bolder;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #585779;
+}
+body .main h3, body .main h2 {
+  font-family: "AvenirNextCyr-Medium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #585779;
+}
+body .main .title {
+  text-align: center;
+}
+body .main .title .line {
+  max-width: 380px;
+  margin-top: 20px;
+  border: 2px solid #FDBFA3;
+  margin: 0 auto;
+}

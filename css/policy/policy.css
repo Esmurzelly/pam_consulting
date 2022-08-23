@@ -1,0 +1,101 @@
+@import "../css_elements/menu/menu.css";
+@import "../css_elements/footer/footer.css";
+@import url("../style.css");
+body .main {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 780px;
+}
+body .main .title {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434364;
+}
+body .main .title .line {
+  max-width: 380px;
+  margin-top: 20px;
+  border: 2px solid #FDBFA3;
+  margin: 0 auto;
+}
+body .main .info_policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+body .main .info_policy .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .main .info_policy .contacts span {
+  font-weight: bold;
+}
+body .main .type_info p:nth-child(3) {
+  text-decoration: underline;
+}
+body .main .type_info p:nth-child(5) {
+  text-decoration: underline;
+}
+body .main .use_info ul > li::marker,
+body .main .cookies ul > li::marker {
+  font-size: 2em;
+  padding-right: 0px;
+}
+body .main p,
+body .main span {
+  font-family: "AvenirNextCyr-Medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #585779;
+}
+body .main a {
+  font-weight: bolder;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #585779;
+}
+body .main h2,
+body .main h3 {
+  font-family: "AvenirNextCyr-Medium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #585779;
+}
+body .main ol,
+body .main ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 0px;
+  list-style-position: inside;
+}
+body .main ol li,
+body .main ul li {
+  margin-top: 10px;
+  font-family: "AvenirNextCyr-Medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #585779;
+}

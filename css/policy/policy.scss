@@ -1,0 +1,104 @@
+@import "../css_elements/menu/menu.css";
+@import "../css_elements/footer/footer.css";
+@import url("../style.css");
+
+body {
+    
+    .main {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 780px;
+        .title {
+            font-family: 'Avenir Next';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #434364;
+
+            .line {
+                max-width: 380px;
+                margin-top: 20px;
+                border: 2px solid #FDBFA3;
+                margin: 0 auto;
+            }
+        }
+        .info_policy {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .type_info {
+            p{
+                &:nth-child(3) {
+                    text-decoration: underline;
+                }
+                &:nth-child(5) {
+                    text-decoration: underline;
+                }
+            }
+        } 
+
+        .use_info,
+        .cookies {
+            ul > li::marker {
+                font-size: 2em;
+                padding-right: 0px;
+            }
+        }
+
+        p,
+        span {
+            font-family: 'AvenirNextCyr-Medium';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #585779;
+        }
+        a {
+            font-weight: bolder;
+            text-decoration: none;
+            font-weight: bolder;
+            color: #585779;
+        }
+        h2,
+        h3 {
+            font-family: 'AvenirNextCyr-Medium';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #585779;
+        }
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+            padding-left: 0px;
+            list-style-position:inside;
+            li {
+                margin-top: 10px;
+                font-family: 'AvenirNextCyr-Medium';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: #585779;        
+            }
+        }
+    }
+}

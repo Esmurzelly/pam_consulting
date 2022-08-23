@@ -1,0 +1,15 @@
+@media (max-width: 1000px) {
+  body .main {
+    margin-top: 115px;
+  }
+}
+@media (max-width: 900px) {
+  body .main {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 480px) {
+  body .main {
+    padding: 0 40px;
+  }
+}

@@ -374,15 +374,19 @@
             </div>
 
         </div>
-        <div class="form">
-            <form action="">
+        <div class="form" >
+            <form action="" novalidate>
                 <h3>send inquiry</h3>
                 <div class="form__data"> 
-                    <input placeholder="Your Name" type="text">
-                    <input placeholder="Email" type="text">
-                    <input placeholder="Subject" type="text">
-                    <input placeholder="Phone" type="text">
-                    <textarea placeholder="Your message" class="email" name="email" id="" cols="30" rows="10"></textarea>
+                    <input class="form_name" placeholder="Your Name" type="text" required minlength="3">
+                        <span class="error error_name" aria-live="polite"></span>
+                    <input class="form_email" placeholder="Email" type="email" required minlength="8">
+                        <span class="error error_email" aria-live="polite"></span>
+                    <input class="form_subject" placeholder="Subject" type="text" required>
+                        <span class="error error_subject" aria-live="polite"></span>
+                    <input class="form_phone" placeholder="Phone" type="text" required minlength="10">
+                        <span class="error error_phone" aria-live="polite"></span>
+                    <textarea placeholder="Your message" class="email" name="email" id="" cols="30" rows="10" required></textarea>
                 </div>
                 <div class="privacy_policy">
                     <label for="checkbox">
@@ -390,12 +394,18 @@
                         <span>By clicking “Submit button” you accept our Terms & Conditions and have read our Privacy Policy and Disclaimer</span>    
                     </label>
                     </div>
-                <button>Submit</button>
+                <button class="myBtn">Submit</button>
                 
             </form>
         </div>
     </section>
-
+    <div class="modal">
+        <div class="modal-content">
+            <h2>Thank You!</h2>
+            <h3>Your request is being reviewed</h3>
+            <p>One of our team members will get in touch with you soon</p>
+        </div>
+    </div>
 
     <section class="partners hide_first">
         <h2>Our Partners</h2>

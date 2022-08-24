@@ -1,3 +1,55 @@
+body .modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(86, 97, 87, 0.5);
+}
+body .modal .modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  background: rgba(255, 235, 128, 0.5);
+  -webkit-backdrop-filter: blur(500px);
+          backdrop-filter: blur(500px);
+  width: 80%;
+  text-align: center;
+  border-radius: 30px;
+}
+body .modal .modal-content h2 {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434364;
+}
+body .modal .modal-content h3 {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434364;
+}
+body .modal .modal-content p {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #434364;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,13 +120,50 @@
           justify-content: space-between;
   gap: 10px;
 }
+.contact .form form .form__data .error {
+  padding: 0;
+  font-size: 80%;
+  color: #fff;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.contact .form form .form__data .error.active {
+  padding: 0.3em;
+  width: 100%;
+}
 .contact .form form .form__data input {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
           box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
   border-radius: 20px;
   padding: 12.5px 80px 10.5px 23px;
-  border: none;
+  border: 1.5px solid #000;
+  outline: none;
+}
+.contact .form form .form__data input::-webkit-input-placeholder {
+  padding: 10px;
+  color: #000;
+}
+.contact .form form .form__data input::-moz-placeholder {
+  padding: 10px;
+  color: #000;
+}
+.contact .form form .form__data input:-ms-input-placeholder {
+  padding: 10px;
+  color: #000;
+}
+.contact .form form .form__data input::-ms-input-placeholder {
+  padding: 10px;
+  color: #000;
+}
+.contact .form form .form__data input::placeholder {
+  padding: 10px;
+  color: #000;
+}
+.contact .form form .form__data input:invalid:required {
+  background: rgba(193, 156, 81, 0.3);
 }
 .contact .form form .form__data .email {
   display: -webkit-box;
@@ -85,22 +174,30 @@
           flex-grow: 1;
   height: 200px;
   border-radius: 10px;
-  border: none;
+  border: 1.5px solid #000;
+}
+.contact .form form .form__data .email:invalid:required {
+  background: rgba(193, 156, 81, 0.3);
 }
 .contact .form form .form__data .email::-webkit-input-placeholder {
   padding: 10px;
+  color: #000;
 }
 .contact .form form .form__data .email::-moz-placeholder {
   padding: 10px;
+  color: #000;
 }
 .contact .form form .form__data .email:-ms-input-placeholder {
   padding: 10px;
+  color: #000;
 }
 .contact .form form .form__data .email::-ms-input-placeholder {
   padding: 10px;
+  color: #000;
 }
 .contact .form form .form__data .email::placeholder {
   padding: 10px;
+  color: #000;
 }
 .contact .form form .privacy_policy {
   margin-top: 20px;
@@ -135,6 +232,7 @@
   border-radius: 30px;
   opacity: 1;
   border: none;
+  cursor: pointer;
 }
 .contact h2 {
   font-family: "AvenirNextCyr-Medium";
@@ -203,6 +301,10 @@
 @media (max-width: 1000px) {
   .contact .form form {
     padding: 16px 60px;
+  }
+
+  body .modal .modal-content {
+    margin: 35% auto;
   }
 }
 @media (max-width: 920px) {

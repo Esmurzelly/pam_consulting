@@ -65,11 +65,13 @@ body .modal .modal-content p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 80px 130px;
+  padding-bottom: 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(109, 49, 208, 0.1)), color-stop(28.65%, rgba(109, 49, 208, 0.21)), color-stop(53.12%, rgba(109, 49, 208, 0.475)), to(#6D31D0));
   background: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
 }
 .contact .form {
-  max-width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
   margin-top: 60px;
 }
 .contact .form form {
@@ -86,14 +88,10 @@ body .modal .modal-content p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 580px;
-  background-color: rgb(255, 219, 128);
+  background-color: rgba(255, 219, 128, 0.5);
   mix-blend-mode: normal;
-  opacity: 0.5;
-  -webkit-backdrop-filter: blur(500px);
-          backdrop-filter: blur(500px);
   border-radius: 60px;
-  padding: 34px 300px;
+  padding: 20px 280px;
 }
 .contact .form form h3 {
   font-family: "AvenirNextCyr-Medium";
@@ -103,6 +101,7 @@ body .modal .modal-content p {
   line-height: 32px;
   text-transform: uppercase;
   color: #434364;
+  text-align: center;
 }
 .contact .form form .form__data {
   margin-top: 20px;
@@ -113,6 +112,11 @@ body .modal .modal-content p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -120,7 +124,21 @@ body .modal .modal-content p {
           justify-content: space-between;
   gap: 10px;
 }
-.contact .form form .form__data .error {
+.contact .form form .form__data div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact .form form .form__data div input {
+  position: relative;
+}
+.contact .form form .form__data div .error {
+  position: absolute;
+  margin-top: 40px;
   padding: 0;
   font-size: 80%;
   color: #fff;
@@ -129,18 +147,18 @@ body .modal .modal-content p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.contact .form form .form__data .error.active {
+.contact .form form .form__data div .error.active {
   padding: 0.3em;
-  width: 100%;
 }
 .contact .form form .form__data input {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
           box-shadow: 0px 4px 8px rgba(28, 37, 44, 0.08);
   border-radius: 20px;
-  padding: 12.5px 80px 10.5px 23px;
   border: 1.5px solid #000;
   outline: none;
+  width: 280px;
+  height: 47px;
 }
 .contact .form form .form__data input::-webkit-input-placeholder {
   padding: 10px;
@@ -165,7 +183,7 @@ body .modal .modal-content p {
 .contact .form form .form__data input:invalid:required {
   background: rgba(193, 156, 81, 0.3);
 }
-.contact .form form .form__data .email {
+.contact .form form .email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,27 +193,30 @@ body .modal .modal-content p {
   height: 200px;
   border-radius: 10px;
   border: 1.5px solid #000;
+  resize: none;
+  width: 100%;
+  margin-top: 20px;
 }
-.contact .form form .form__data .email:invalid:required {
+.contact .form form .email:invalid:required {
   background: rgba(193, 156, 81, 0.3);
 }
-.contact .form form .form__data .email::-webkit-input-placeholder {
+.contact .form form .email::-webkit-input-placeholder {
   padding: 10px;
   color: #000;
 }
-.contact .form form .form__data .email::-moz-placeholder {
+.contact .form form .email::-moz-placeholder {
   padding: 10px;
   color: #000;
 }
-.contact .form form .form__data .email:-ms-input-placeholder {
+.contact .form form .email:-ms-input-placeholder {
   padding: 10px;
   color: #000;
 }
-.contact .form form .form__data .email::-ms-input-placeholder {
+.contact .form form .email::-ms-input-placeholder {
   padding: 10px;
   color: #000;
 }
-.contact .form form .form__data .email::placeholder {
+.contact .form form .email::placeholder {
   padding: 10px;
   color: #000;
 }
@@ -293,12 +314,17 @@ body .modal .modal-content p {
   margin-top: 20px;
 }
 
-@media (max-width: 1434px) {
+@media (max-width: 1407px) {
   .contact .form form {
-    padding: 34px 73px;
+    padding: 34px 200px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1261px) {
+  .contact .form form {
+    padding: 34px 152px;
+  }
+}
+@media (max-width: 1151px) {
   .contact .form form {
     padding: 16px 60px;
   }
@@ -307,20 +333,27 @@ body .modal .modal-content p {
     margin: 35% auto;
   }
 }
-@media (max-width: 920px) {
-  .contact .form form {
-    padding: 16px 41px;
+@media (max-width: 1000px) {
+  .contact .form {
+    max-width: 600px;
   }
-  .contact .form form .form__data input {
-    padding: 12.5px 63px 10.5px 23px;
+  .contact .form form .form__data > div > input {
+    width: 224px;
   }
 }
-@media (max-width: 768px) {
-  .contact .form {
-    max-width: 100%;
-    margin-top: 60px;
+@media (max-width: 852px) {
+  .contact .form form .form__data > div > input {
+    width: 200px;
+    height: 35px;
   }
+}
+@media (max-width: 806px) {
   .contact .form form {
+    padding: 16px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .contact .form form .form__data {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -328,27 +361,14 @@ body .modal .modal-content p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    max-width: 580px;
-    padding: 9px 14px;
+    width: 100%;
   }
-  .contact .form form .form__data input {
-    padding: 12.5px 30px 10.5px 23px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+  .contact .form form .form__data div > input {
+    width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 566px) {
   .contact {
-    padding: 80px 40px;
-  }
-  .contact .form form .form__data input {
-    width: 100%;
+    padding: 80px 10px;
   }
 }

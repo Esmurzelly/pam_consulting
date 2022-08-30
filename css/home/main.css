@@ -1,23 +1,21 @@
 @import "../style.css";
-body {
-  overflow-x: hidden;
-}
-
 .our_services {
   font-family: "AvenirNextCyr-Medium";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.43%, #828CDE), color-stop(201.93%, #6D31D0));
   background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
   padding-bottom: 70px;
 }
-.our_services h2 {
-  padding-top: 70px;
-  color: #ffffff;
+.our_services .our_services__title {
+  padding-top: 20px;
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.our_services .our_services__title h2 {
   text-align: center;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  margin-bottom: 20px;
+  color: #ffffff;
 }
 .our_services .line {
   max-width: 380px;
@@ -453,12 +451,11 @@ body {
   text-transform: uppercase;
 }
 .founder .founder_describing .line {
-  margin-top: 20px;
   width: 447px;
   height: 0px;
   border: 2px solid #FDBFA3;
   position: absolute;
-  top: 25px;
+  top: 77px;
   right: 280px;
 }
 .founder .founder_describing p {
@@ -500,8 +497,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: #FFFFFF;
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;

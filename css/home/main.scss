@@ -1,22 +1,21 @@
 @import "../style.css";
 
-body {
-    overflow-x: hidden;
-}
 
 .our_services {
     font-family: 'AvenirNextCyr-Medium';
     background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
     padding-bottom: 70px;
-    h2 {
-        padding-top: 70px;
-        color: #ffffff;
+   .our_services__title {
+        padding-top: 20px;
         text-transform: uppercase;
-        text-align: center;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
         margin-bottom: 20px;
+        h2 {
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            color: #ffffff;
+        }
     }
     .line {
         max-width: 380px;
@@ -343,12 +342,11 @@ body {
             text-transform: uppercase;
         }
         .line {
-            margin-top: 20px;
             width: 447px;
             height: 0px;
             border: 2px solid #FDBFA3;
             position: absolute;
-            top: 25px;
+            top: 77px;
             right: 280px;
         }
         p {
@@ -384,8 +382,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        background: #FFFFFF;
-        opacity: 0.8;
+        background: rgba(255, 255, 255, 0.8);
         box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         padding: 20px 46px 20px 20px;

@@ -2,6 +2,8 @@
 @import "../css_elements/form/form.css";
 @import "../css_elements/menu/menu.css";
 @import "../css_elements/qa/qa.css";
+@import "../style.css";
+
 
 body {
     padding: 0;
@@ -61,7 +63,7 @@ body {
                 flex-direction: row-reverse;
             }
             h3 {
-                font-family: 'Avenir Next';
+                font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 28px;
@@ -72,7 +74,7 @@ body {
             
             p,
             li {
-                font-family: 'Avenir Next';
+                font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
@@ -104,7 +106,7 @@ body {
             max-width: 1000px;
             h2 {
                 margin-top: 80px;
-                font-family: 'Avenir Next';
+                font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 36px;
@@ -122,7 +124,7 @@ body {
             }
             p {
                 margin-top: 20px;
-                font-family: 'Avenir Next';
+                font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;

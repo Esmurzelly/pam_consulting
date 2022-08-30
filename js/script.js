@@ -112,11 +112,8 @@ form.addEventListener("submit", function(e) {
         e.preventDefault()
     }
 
-    console.log("asdsad")
 
     
-
-    e.stopPropagation();
 })
 
 // Modal window
@@ -124,18 +121,29 @@ btn.addEventListener("click", function(e) {
     e.preventDefault();
     if(email.validity.valid && name.validity.valid && subject.validity.valid && phone.validity.valid && checkbox.checked) {        
         modal.style.display = 'block'; 
+        body.classList.toggle("noscroll");
     }
-    email.value = "";
-    name.value = "";
-    subject.value = "";
-    phone.value = "";
-    textarea.value = "";
-    checkbox.checked = false;
+    
+   // body.style.overflow = "hidden";
+
+    
 });
 window.addEventListener("click", function(e) {
     if(e.target == modal) {
         modal.style.display = 'none';
+
+        email.value = "";
+        name.value = "";
+        subject.value = "";
+        phone.value = "";
+        textarea.value = "";
+        checkbox.checked = false;
+
+        body.classList.remove("noscroll");
+    //body.style.overflow = "visible";
     }
+    //
+
 }, false)
 
 
@@ -185,4 +193,28 @@ let showError = {
         }
         phoneError.className = "error active";
     },
+}
+
+
+
+// scrolling while click to ContactUs
+const menuLinks = document.querySelectorAll('.link_contact[data-goto]')
+
+if(menuLinks.length > 0) {
+    menuLinks.forEach(menuLink => {
+            menuLink.addEventListener("click", function(e) {
+                const menuLink = e.target;
+                if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+                    const gotoBlock = document.querySelector(menuLink.dataset.goto);
+                    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + 
+                    pageYOffset; 
+
+                    window.scrollTo({
+                        top: gotoBlockValue,
+                        behavior: "smooth"
+                    });
+                    e.preventDefault();
+                }
+            })
+    })
 }

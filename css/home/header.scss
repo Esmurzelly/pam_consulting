@@ -1,7 +1,11 @@
 header {
-    .swiper {
+    .swiper1 {
         max-width: 1440px;
         height: 740px;
+
+        .swiper-wrapper .swiper-slide_1 .content .main_info {
+            margin-top: -24px;
+        }
         
         .swiper-pagination {
             display: flex;
@@ -23,7 +27,7 @@ header {
             width: 20px;
             height: 20px;
           }
-          
+            
         .swiper-slide {
             position: relative;
             & img {
@@ -34,9 +38,9 @@ header {
             & .content {
                 max-width: 700px;
                 position: absolute;
-                top: 130px;
+                top: 20px;
                 left: 158px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: "Montserrat", sans-serif;
                 color: #ffffff;
                 .arragements {
                     display: flex;

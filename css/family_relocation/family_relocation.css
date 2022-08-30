@@ -82,7 +82,7 @@ body .benefits .type_benefit:nth-child(2) {
           flex-direction: row-reverse;
 }
 body .benefits .type_benefit h3 {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -92,7 +92,7 @@ body .benefits .type_benefit h3 {
 }
 body .benefits .type_benefit p,
 body .benefits .type_benefit li {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

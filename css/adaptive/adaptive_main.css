@@ -1,8 +1,3 @@
-@media (max-width: 1434px) {
-  .contact .form form {
-    padding: 34px 73px;
-  }
-}
 @media (max-width: 1240px) {
   .map {
     padding: 81px 50px 10px 26px;
@@ -58,13 +53,15 @@
     width: 20px;
     height: 20px;
   }
+  header .swiper .swiper-wrapper .swiper-slide_1 .content .main_info {
+    margin-top: -44px;
+  }
   header .swiper .swiper-slide {
     position: relative;
   }
   header .swiper .swiper-slide .content {
     max-width: 700px;
     position: absolute;
-    top: 130px;
     left: 100px;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
@@ -85,9 +82,6 @@
   }
   header .swiper .swiper-slide .content .arragements p:not(:first-child) {
     margin-right: 10px;
-  }
-  header .swiper .swiper-slide .content .main_info {
-    margin-top: 44px;
   }
   header .swiper .swiper-slide .content .main_info h4:first-child {
     font-size: 36px;
@@ -239,12 +233,10 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     position: relative;
   }
   .founder .founder_describing .line {
-    margin-top: 20px;
     width: 447px;
     height: 0px;
     border: 2px solid #FDBFA3;
     position: absolute;
-    top: 25px;
     right: 400px;
   }
   .founder .founder_describing p {
@@ -252,35 +244,29 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   }
 }
 @media (max-width: 858px) {
-  header .slider .swiper-slide .content {
+  header .slider .swiper1 .swiper-wrapper .swiper-slide_1 .content {
+    left: 40px;
+  }
+  header .slider .swiper .swiper-slide .content {
     top: 110px;
     left: 46px;
   }
-  header .slider .swiper-slide .content .main_info {
+  header .slider .swiper .swiper-slide .content .advertisement {
+    display: none;
+  }
+  header .slider .swiper .swiper-slide .content .main_info {
     margin-left: 25px;
   }
-  header .slider .swiper-slide .content .arragements {
+  header .slider .swiper .swiper-slide .content .arragements {
     margin-left: 25px;
   }
-  header .slider .swiper-slide .content .advertisement {
-    margin-top: 70px;
-  }
-  header .slider .swiper-slide .content .advertisement .advertisement_types div:not(:first-child) {
-    margin-left: 20px;
-  }
-  header .slider .swiper-slide .content .advertisement .advertisement_types div img {
-    width: 123px;
-    height: 108px;
-    padding: 10px 7.5px;
-  }
-
-  .choosing .choosing__types {
+  header .slider .choosing .choosing__types {
     gap: 30px;
   }
-  .choosing .choosing__types .choosing__type {
+  header .slider .choosing .choosing__types .choosing__type {
     max-width: 230px;
   }
-  .choosing .choosing__types .choosing__type .describe_choosing__type {
+  header .slider .choosing .choosing__types .choosing__type .describe_choosing__type {
     width: 257px;
   }
 }
@@ -390,9 +376,26 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
             flex-direction: column;
   }
 }
-@media (max-width: 683px) {
-  header .slider .swiper-slide .content .advertisement {
-    display: none;
+@media (max-width: 700px) {
+  header .swiper .swiper-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 669px) {
+  header .slider .swiper1 .swiper-wrapper .swiper-slide .content {
+    left: 2px;
   }
 }
 @media (max-width: 617px) {
@@ -450,16 +453,8 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .founder .founder_card .founder .founder_card .founder_card__name {
     margin-left: 0;
   }
-
-  .contact {
-    padding: 80px 62px;
-  }
 }
 @media (max-width: 480px) {
-  header .slider .swiper .swiper-wrapper .swiper-slide_1 .content .advertisement {
-    display: none;
-  }
-
   header .slider .swiper .swiper-wrapper .swiper-slide .content {
     left: -23px;
     top: 56px;
@@ -568,5 +563,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
 
   .map .cyprus_map img {
     max-width: 80%;
+    margin: 0 auto;
   }
 }

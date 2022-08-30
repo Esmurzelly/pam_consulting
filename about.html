@@ -26,20 +26,20 @@
                 </div>
                 
                 <ul class="menu__list" id="menu__list">
-                    <li>home</li>
-                    <li>about us</li>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="#">about us</a></li>
                     <li>
                         <a href="" class="menu-link">services</a>
                         <div class="triangle_down"></div>
                         <ul class="menu__sub-list">
-                            <li><a href="" class="menu__sub-link">Investments opportunities</a></li>
-                            <li><a href="" class="menu__sub-link">Business relocation</a></li>
-                            <li><a href="" class="menu__sub-link">Family relocation</a></li>
+                            <li><a href="./investment.html" class="menu__sub-link">Investments opportunities</a></li>
+                            <li><a href="./bussiness.html" class="menu__sub-link">Business relocation</a></li>
+                            <li><a href="./family_relocation.html" class="menu__sub-link">Family relocation</a></li>
                         </ul>
                     </li>
-                    <li>invest in cyprus</li>
-                    <li>migration</li>
-                    <li>contact us</li>
+                    <li><a href="./investment.html">invest in cyprus</a></li>
+                    <li><a href="./migration.html">migration</a></li>
+                    <li><a href="#contact">contact us</a></li>
                 </ul>
             </nav>
             <div class="popup" id="popup"></div>
@@ -105,7 +105,7 @@
         </div>
    </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <div class="line"></div>
         <div class="contact__info">
@@ -119,24 +119,37 @@
             </div>
      </div>
 
-    <div class="form">
-        <form action="">
+     <div class="form">
+        <form action="#" method="get" name="form" enctype="multipart/form-data">
             <h3>send inquiry</h3>
-            <div class="form__data"> 
-                <input placeholder="Your Name" type="text">
-                <input placeholder="Email" type="text">
-                <input placeholder="Subject" type="text">
-                <input placeholder="Phone" type="text">
-                <textarea placeholder="Your message" class="email" name="email" id="" cols="30" rows="10"></textarea>
+            <div class="form__data">
+                <div class="form__name">
+                    <input class="form_name" name="name" placeholder="Your Name" type="text" required minlength="3">
+                    <span class="error error_name" aria-live="polite"></span>
+                </div>
+                <div class="form__email">
+                    <input class="form_email" name="email" placeholder="Email" type="email" required minlength="8">
+                    <span class="error error_email" aria-live="polite"></span>
+                </div>
+                <div class="form__subject">
+                    <input class="form_subject" name="subject" placeholder="Subject" type="text" required>
+                    <span class="error error_subject" aria-live="polite"></span>
+                </div>
+                <div class="form__phone">
+                    <input class="form_phone" name="phone" placeholder="Phone" type="tel" required minlength="10">
+                    <span class="error error_phone" aria-live="polite"></span>
+                </div>                    
             </div>
+            
+            <textarea placeholder="Your message" class="email" name="email" id="" cols="30" rows="10" required></textarea>
+
             <div class="privacy_policy">
                 <label for="checkbox">
                     <input id="checkbox" type="checkbox">
                     <span>By clicking “Submit button” you accept our Terms & Conditions and have read our Privacy Policy and Disclaimer</span>    
                 </label>
-                </div>
-                <button class="myBtn">Submit</button>
-            
+            </div>
+            <button type="submit" class="myBtn">Submit</button>
         </form>
     </div>
 </section>

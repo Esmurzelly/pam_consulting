@@ -2,6 +2,7 @@
 @import "../css_elements/form/form.css";
 @import "../css_elements/menu/menu.css";
 @import "../css_elements/qa/qa.css";
+@import "../style.css";
 body {
   padding: 0;
   margin: 0;
@@ -81,7 +82,7 @@ body .benefits .type_benefit:nth-child(2) {
           flex-direction: row-reverse;
 }
 body .benefits .type_benefit h3 {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -91,7 +92,7 @@ body .benefits .type_benefit h3 {
 }
 body .benefits .type_benefit p,
 body .benefits .type_benefit li {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -131,7 +132,7 @@ body .help .help__info {
 }
 body .help .help__info h2 {
   margin-top: 80px;
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -157,7 +158,7 @@ body .help .help__info ul {
 }
 body .help .help__info p {
   margin-top: 20px;
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

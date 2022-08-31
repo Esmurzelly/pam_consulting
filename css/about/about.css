@@ -10,7 +10,7 @@ body {
           box-sizing: border-box;
 }
 body .we_are {
-  background: url("/img/about/offer_team_image_1.png");
+  background: url("../../img/about/offer_team_image_1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -29,9 +29,7 @@ body .we_are p {
   font-weight: 600;
   font-size: 36px;
   line-height: 40px;
-  /* identical to box height, or 111% */
   text-transform: uppercase;
-  /* pam_color5 */
   color: #434364;
 }
 body .we_are::after {

@@ -37,8 +37,7 @@ body {
             button {
                 position: absolute;
                 top: 151px;
-                left: 260px;
-    
+                right: 32%;    
                 font-family: 'AvenirNextCyr-Medium';
                 font-style: normal;
                 font-weight: 400;
@@ -107,42 +106,76 @@ body {
             height: 12px;
         }
     }
+
+
+    @media (max-width: 1686px) {  
+        // contact
+        
+        .question .swiper-slide .content button  {
+            top: 150px;
+            right: 23%;
+        }
+    }
+
+    @media (max-width: 1439px) {  
+        // contact
+        
+        .question .swiper-slide .content button  {
+            right: 40%;
+        }
+    }
+
+    @media (max-width: 1276px) {  
+        // contact
+        
+        .question .swiper-slide .content button  {
+            right: 30%;
+        }
+    }
     
     
     @media (max-width: 1000px) {  
         // contact
         
         .question .swiper-slide .content button  {
-            top: 129px;
-            left: 235px;
+            right: 2%;
         }
     }
     
-    @media (max-width: 938px) {
+    @media (max-width: 982px) {
         .question .swiper-slide .content button  {
-            top: 119px;
-            left: 200px;
+            top: 121px;
+            right: 2%;
         }
     }
     
     @media (max-width: 858px) {
         .question .swiper-slide .content button  {
-            top: 100px;
-            left: 172px;
+            top: 97px;
             font-size: 14px;
         }
     }
     
     @media (max-width: 768px) {
+        .question .swiper-slide .content button  {
+            top: 134px;
+            font-size: 14px;
+        }
+
         .question {
             padding: 64px 28px 1px 5px;
+        }
+    }
+
+    @media (max-width: 667px) {
+        .question .swiper-slide .content button  {
+            top: 100px;
+            font-size: 14px;
         }
     }
     
     @media (max-width: 566px) {
         .question .swiper-slide .content button {
-            top: 88px;
-            left: 147px;
             font-size: 12px;
         }
     }

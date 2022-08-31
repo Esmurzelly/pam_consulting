@@ -8,7 +8,7 @@ body {
           box-sizing: border-box;
 }
 body .bussiness_relocation {
-  background: url("/img/bussiness/head.png");
+  background: url("../../img/bussiness/head.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

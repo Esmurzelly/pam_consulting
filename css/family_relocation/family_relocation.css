@@ -10,7 +10,7 @@ body {
           box-sizing: border-box;
 }
 body .relocation {
-  background: url("/img/family/head.png");
+  background: url("../../img/family/head.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,8 +1,8 @@
 @import "../style.css";
-@import "/css/css_elements/qa/qa.css";
-@import "/css/css_elements/footer/footer.css";
-@import "/css/css_elements/menu/menu.css";
-@import "/css/css_elements/form/form.css";
+@import "../css_elements/menu/menu.css";
+@import "../css_elements/footer/footer.css";
+@import "../css_elements/form/form.css";
+@import "../css_elements/qa/qa.css";
 body {
   padding: 0;
   margin: 0;

@@ -1,8 +1,8 @@
 @import "../style.css";
-@import "/css/css_elements/qa/qa.css";
-@import "/css/css_elements/footer/footer.css";
-@import "/css/css_elements/menu/menu.css";
-@import "/css/css_elements/form/form.css";
+@import "../css_elements/menu/menu.css";
+@import "../css_elements/footer/footer.css";
+@import "../css_elements/form/form.css";
+@import "../css_elements/qa/qa.css";
 .our_services {
   font-family: "AvenirNextCyr-Medium";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.43%, #828CDE), color-stop(201.93%, #6D31D0));

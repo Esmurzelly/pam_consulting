@@ -140,12 +140,6 @@ window.addEventListener("click", function(e) {
 
 }, false)
 
-
-
-
-
-
-
 let showError = {
     showErrorEmail: function () {
         if(email.validity.valueMissing) {
@@ -253,8 +247,8 @@ if(isMobile.any()) {
                 menuArrow.parentElement.classList.toggle("_active");
             });
         }
-    } else {
-        document.body.classList.add("pc");
-    }
+    } 
+}else {
+    document.body.classList.add("pc");
 }
 

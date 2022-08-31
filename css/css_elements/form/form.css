@@ -159,6 +159,7 @@ body .modal .modal-content p {
   outline: none;
   width: 280px;
   height: 47px;
+  padding: 5px 0 5px 20px;
 }
 .contact .form form .form__data input::-webkit-input-placeholder {
   padding: 10px;
@@ -196,6 +197,7 @@ body .modal .modal-content p {
   resize: none;
   width: 100%;
   margin-top: 20px;
+  padding: 7px 0 0 10px;
 }
 .contact .form form .email:invalid:required {
   background: rgba(193, 156, 81, 0.3);

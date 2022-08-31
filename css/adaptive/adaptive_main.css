@@ -566,3 +566,8 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     margin: 0 auto;
   }
 }
+@media (max-width: 416px) {
+  .our_services .cards .card img {
+    max-width: 314px;
+  }
+}

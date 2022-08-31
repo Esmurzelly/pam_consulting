@@ -1,6 +1,7 @@
 @import "../css_elements/menu/menu.css";
 @import "../css_elements/footer/footer.css";
 @import "../css_elements/form/form.css";
+@import "../css_elements/qa/qa.css";
 @import url("../style.css");
 body {
   -webkit-box-sizing: border-box;

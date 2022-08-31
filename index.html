@@ -9,23 +9,18 @@
 
     <link rel="stylesheet" href="css/home/header.css">
     <link rel="stylesheet" href="css/home/main.css">
-    <link rel="stylesheet" href="css/css_elements/footer/footer.css">
-    <link rel="stylesheet" href="css/css_elements/form/form.css">
-    <link rel="stylesheet" href="css/css_elements/menu/menu.css">
-    <link rel="stylesheet" href="css/css_elements/qa/qa.css">
     <link rel="stylesheet" href="css/adaptive/adaptive_main.css">
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-  
-/>
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
         <div class="menu">
-            <div class="logo"><img src="./img/header/logo.svg" alt="logo"></div>
+            <div class="logo">
+                <a href="#slider"><img src="./img/header/logo.svg" alt="logo"></a>
+            </div>
         
-            <nav>
+            <nav id="nav">
                 <div class="hamb">
                     <div class="hamb__field" id="hamb">
                         <span class="bar"></span>
@@ -57,7 +52,7 @@
             
         </div>
 
-        <div class="slider">
+        <div id="slider" class="slider">
             <div class="swiper swiper1">
                 <div class="swiper-wrapper">
                     
@@ -405,7 +400,7 @@
                 <div class="privacy_policy">
                     <label for="checkbox">
                         <input id="checkbox" type="checkbox">
-                        <span>By clicking “Submit button” you accept our Terms & Conditions and have read our Privacy Policy and Disclaimer</span>    
+                        <span>By clicking “Submit button” you accept our Terms & Conditions and have read our <a href="./policy.html">Privacy Policy</a> and <a href="./disclamer.html">Disclaimer</a></span>    
                     </label>
                 </div>
                 <button type="submit" class="myBtn">Submit</button>
@@ -580,7 +575,7 @@
       </footer>
     
     
-      <script src="js/script.js"></script>
+    <script  src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
 </body>

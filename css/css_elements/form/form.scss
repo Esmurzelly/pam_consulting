@@ -124,6 +124,7 @@ body {
                     outline: none;
                     width: 280px;
                     height: 47px;
+                    padding: 5px 0 5px 20px;
                     &::placeholder {
                         padding: 10px;
                         color: #000;
@@ -143,6 +144,7 @@ body {
                 resize: none;
                 width: 100%;
                 margin-top: 20px;
+                padding: 7px 0 0 10px;
                 &:invalid:required {
                     background: rgba(193, 156, 81, 0.3);
                 }

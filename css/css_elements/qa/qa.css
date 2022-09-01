@@ -62,6 +62,7 @@ body .question .swiper-slide .content button {
   border-radius: 20px;
   border: none;
   padding: 3px 10.5px;
+  text-align: center;
 }
 body .question .swiper-slide .content .content_describing {
   padding: 10px 30px 40px 30px;

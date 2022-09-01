@@ -571,3 +571,24 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     max-width: 314px;
   }
 }
+@media (max-width: 376px) {
+  .founder .founder_card {
+    padding: 20px 18px;
+  }
+
+  .contact .line {
+    width: 260px;
+  }
+
+  .our_services .line {
+    width: 260px;
+  }
+
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .main_info h5 {
+    width: 257px;
+  }
+
+  header .slider .swiper .swiper-wrapper .swiper-slide .content {
+    left: 10px;
+  }
+}

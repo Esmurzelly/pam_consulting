@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-
+}
+body button {
+  cursor: pointer;
+}
+body button a {
+  text-decoration: none;
 }
 
 @font-face {

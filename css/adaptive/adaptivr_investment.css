@@ -40,6 +40,9 @@
         justify-content: space-around;
     gap: 20px;
   }
+  body .benefits .type_benefit:first-child::before {
+    display: none;
+  }
   body .benefits .type_benefit:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,16 +1,18 @@
+@import "../style.css";
+
 @import "../css_elements/menu/menu.css";
 @import "../css_elements/footer/footer.css";
-@import url("../style.css");
+
+
+@import "../scss_features/scss_features.scss";
 
 body {
     .main {
-        margin: 0 auto;
+        margin: $marginCenter;
         text-align: left;
         max-width: 780px;
         p {
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 400;
+            @include standardFontAvenir400();
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.5px;
@@ -37,7 +39,7 @@ body {
                 max-width: 380px;
                 margin-top: 20px;
                 border: 2px solid #FDBFA3;
-                margin: 0 auto;
+                margin: $marginCenter;
             }
         }
     }

@@ -1,56 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
 body {
 	height: 100%;
 	margin: 0;
     padding: 0;
 	box-sizing: border-box;
-
-	button {
-		cursor: pointer;
-		a {
-			text-decoration: none;
-		}
-	}
 }
-
-//font-family: 'Montserrat', sans-serif;
-//font-family: 'AvenirNextCyr-Medium';
 
 @font-face {
 	font-family: 'AvenirNextCyr-Medium';
-	src: url('../css/fonts/avenirnextcyr-medium.eot'); /* IE 9 Compatibility Mode */
-	src: url('../css/fonts/avenirnextcyr-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../css/fonts/avenirnextcyr-medium.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../css/fonts/avenirnextcyr-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../css/fonts/avenirnextcyr-medium.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../css/fonts/avenirnextcyr-medium.svg#avenirnextcyr-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+	src: url('../css/fonts/avenirnextcyr-medium.eot');
+	src: url('../css/fonts/avenirnextcyr-medium.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/avenirnextcyr-medium.woff2') format('woff2'),
+		url('../css/fonts/avenirnextcyr-medium.woff') format('woff'),
+		url('../css/fonts/avenirnextcyr-medium.ttf') format('truetype'),
+		url('../css/fonts/avenirnextcyr-medium.svg#avenirnextcyr-medium') format('svg');
 }
 @font-face {
 	font-family: 'AvenirNextCyr-Regular';
-    src: url('../css/fonts/avenirnextcyr-regular.eot'); /* IE 9 Compatibility Mode */
-    src: url('../css/fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../css/fonts/avenirnextcyr-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../css/fonts/avenirnextcyr-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../css/fonts/avenirnextcyr-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../css/fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+    src: url('../css/fonts/avenirnextcyr-regular.eot'); 
+    src: url('../css/fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/avenirnextcyr-regular.woff2') format('woff2'),
+		url('../css/fonts/avenirnextcyr-regular.woff') format('woff'),
+		url('../css/fonts/avenirnextcyr-regular.ttf') format('truetype'),
+		url('../css/fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg');
 }
 @font-face {
 	font-family: 'AvenirNextCyr-Demi';
-	src: url('../css/fonts/avenirnextcyr-demi.eot'); /* IE 9 Compatibility Mode */
-	src: url('../css/fonts/avenirnextcyr-demi.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../css/fonts/avenirnextcyr-demi.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../css/fonts/avenirnextcyr-demi.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../css/fonts/avenirnextcyr-demi.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../css/fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi') format('svg'); /* Chrome < 4, Legacy iOS */
+	src: url('../css/fonts/avenirnextcyr-demi.eot');
+	src: url('../css/fonts/avenirnextcyr-demi.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/avenirnextcyr-demi.woff2') format('woff2'),
+		url('../css/fonts/avenirnextcyr-demi.woff') format('woff'),
+		url('../css/fonts/avenirnextcyr-demi.ttf') format('truetype'),
+		url('../css/fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi') format('svg');
 }
 @font-face {
 	font-family: 'AvenirNextCyr-Bold';
-	src: url('../css/fonts/avenirnextcyr-bold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../css/fonts/avenirnextcyr-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../css/fonts/avenirnextcyr-bold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../css/fonts/avenirnextcyr-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/avenirnextcyr-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../css/fonts/avenirnextcyr-bold.svg#avenirnextcyr-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+	src: url('../css/fonts/avenirnextcyr-bold.eot'); 
+	src: url('../css/fonts/avenirnextcyr-bold.eot?#iefix') format('embedded-opentype'),
+		url('../css/fonts/avenirnextcyr-bold.woff2') format('woff2'),
+		url('../css/fonts/avenirnextcyr-bold.woff') format('woff'),
+		url('../fonts/avenirnextcyr-bold.ttf') format('truetype'),
+		url('../css/fonts/avenirnextcyr-bold.svg#avenirnextcyr-bold') format('svg');
 }

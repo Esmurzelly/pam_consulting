@@ -16,28 +16,20 @@ body button a {
 @font-face {
   font-family: "AvenirNextCyr-Medium";
   src: url("../css/fonts/avenirnextcyr-medium.eot");
-  /* IE 9 Compatibility Mode */
   src: url("../css/fonts/avenirnextcyr-medium.eot?#iefix") format("embedded-opentype"), url("../css/fonts/avenirnextcyr-medium.woff2") format("woff2"), url("../css/fonts/avenirnextcyr-medium.woff") format("woff"), url("../css/fonts/avenirnextcyr-medium.ttf") format("truetype"), url("../css/fonts/avenirnextcyr-medium.svg#avenirnextcyr-medium") format("svg");
-  /* Chrome < 4, Legacy iOS */
 }
 @font-face {
   font-family: "AvenirNextCyr-Regular";
   src: url("../css/fonts/avenirnextcyr-regular.eot");
-  /* IE 9 Compatibility Mode */
   src: url("../css/fonts/avenirnextcyr-regular.eot?#iefix") format("embedded-opentype"), url("../css/fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../css/fonts/avenirnextcyr-regular.woff") format("woff"), url("../css/fonts/avenirnextcyr-regular.ttf") format("truetype"), url("../css/fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular") format("svg");
-  /* Chrome < 4, Legacy iOS */
 }
 @font-face {
   font-family: "AvenirNextCyr-Demi";
   src: url("../css/fonts/avenirnextcyr-demi.eot");
-  /* IE 9 Compatibility Mode */
   src: url("../css/fonts/avenirnextcyr-demi.eot?#iefix") format("embedded-opentype"), url("../css/fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../css/fonts/avenirnextcyr-demi.woff") format("woff"), url("../css/fonts/avenirnextcyr-demi.ttf") format("truetype"), url("../css/fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi") format("svg");
-  /* Chrome < 4, Legacy iOS */
 }
 @font-face {
   font-family: "AvenirNextCyr-Bold";
   src: url("../css/fonts/avenirnextcyr-bold.eot");
-  /* IE 9 Compatibility Mode */
   src: url("../css/fonts/avenirnextcyr-bold.eot?#iefix") format("embedded-opentype"), url("../css/fonts/avenirnextcyr-bold.woff2") format("woff2"), url("../css/fonts/avenirnextcyr-bold.woff") format("woff"), url("../fonts/avenirnextcyr-bold.ttf") format("truetype"), url("../css/fonts/avenirnextcyr-bold.svg#avenirnextcyr-bold") format("svg");
-  /* Chrome < 4, Legacy iOS */
 }

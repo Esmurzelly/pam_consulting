@@ -1,13 +1,13 @@
+@import "../style.css";
 @import "../css_elements/menu/menu.css";
 @import "../css_elements/footer/footer.css";
-@import url("../style.css");
 body .main {
   margin: 0 auto;
   text-align: left;
   max-width: 780px;
 }
 body .main .title {
-  font-family: "Avenir Next";
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -44,10 +44,7 @@ body .main .info_policy .contacts {
 body .main .info_policy .contacts span {
   font-weight: bold;
 }
-body .main .type_info p:nth-child(3) {
-  text-decoration: underline;
-}
-body .main .type_info p:nth-child(5) {
+body .main .type_info p:nth-child(3), body .main .type_info p:nth-child(5) {
   text-decoration: underline;
 }
 body .main .use_info ul > li::marker,

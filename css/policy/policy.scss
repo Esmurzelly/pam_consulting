@@ -1,17 +1,17 @@
+@import "../style.css";
+
 @import "../css_elements/menu/menu.css";
 @import "../css_elements/footer/footer.css";
-@import url("../style.css");
+
+@import "../scss_features/scss_features.scss";
 
 body {
-    
     .main {
-        margin: 0 auto;
+        margin: $marginCenter;
         text-align: left;
         max-width: 780px;
         .title {
-            font-family: 'Avenir Next';
-            font-style: normal;
-            font-weight: 600;
+            @include standardFontAvenir();
             font-size: 36px;
             line-height: 40px;
             text-align: center;
@@ -22,7 +22,7 @@ body {
                 max-width: 380px;
                 margin-top: 20px;
                 border: 2px solid #FDBFA3;
-                margin: 0 auto;
+                margin: $marginCenter;
             }
         }
         .info_policy {
@@ -40,9 +40,7 @@ body {
 
         .type_info {
             p{
-                &:nth-child(3) {
-                    text-decoration: underline;
-                }
+                &:nth-child(3),
                 &:nth-child(5) {
                     text-decoration: underline;
                 }
@@ -59,9 +57,7 @@ body {
 
         p,
         span {
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 400;
+            @include standardFontAvenir400();
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.5px;
@@ -91,9 +87,7 @@ body {
             list-style-position:inside;
             li {
                 margin-top: 10px;
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 400;
+                @include standardFontAvenir400();
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0.5px;

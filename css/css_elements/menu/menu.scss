@@ -42,8 +42,6 @@ body {
     }
 }
 
-
-
 header {
     & .menu {
         padding: 20px 0;
@@ -94,7 +92,6 @@ header {
         }
     }
 }
-
 
 header .menu {
     padding: 0 20px;
@@ -162,7 +159,6 @@ header .menu {
     }
     
 }
-
 
 @media (max-width: 1240px) {
     header .menu {
@@ -243,7 +239,6 @@ header .menu {
                     text-align: center;
                     text-transform: uppercase;
                     color: #434364;
-                    //z-index: 9;
                     a {color: #434364;}
                 }
             }
@@ -266,8 +261,6 @@ header .menu {
             transform: translateY(-9px) rotate(-45deg);
         }
     }
-
-    
 
     .menu .popup {
         position: fixed;
@@ -328,7 +321,6 @@ header .menu {
         }
     }
 }
-
 
 @media (max-width: 480px) {
     header {

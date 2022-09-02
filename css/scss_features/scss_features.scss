@@ -10,6 +10,9 @@
     font-weight: 600;
     box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
     cursor: pointer;
+    a {
+        text-decoration: none;
+    }
 }
 
 
@@ -99,7 +102,6 @@
 
 
 // variables
-
 $marginCenter: 0 auto;
 
 //gradients

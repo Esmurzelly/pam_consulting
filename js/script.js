@@ -5,7 +5,6 @@ const menu = document.querySelector("#menu__list");
 const body = document.body;
 const links = Array.from(menu.children);
 
-
 hamb.addEventListener("click", hambHandler);
 links.forEach((link) => {
     link.addEventListener("click", closeOnClick)
@@ -16,7 +15,8 @@ function hambHandler (e) {
     popup.classList.toggle("open");
     hamb.classList.toggle("active");
     body.classList.toggle("noscroll");
-    renderPopup();
+    // renderPopup();
+    popup.appendChild(menu);
 }
 
 function closeOnClick() {
@@ -25,33 +25,32 @@ function closeOnClick() {
     body.classList.remove("noscroll");
 }
 
-function renderPopup() {
-    popup.appendChild(menu);
-}
+// function renderPopup() {
+//     popup.appendChild(menu);
+// }
 
 
 // Validation
-const form = document.getElementsByTagName('form')[0];
+const form = document.getElementsByTagName('form')[0],
 
-const name = document.querySelector(".form_name");
-const email = document.querySelector(".form_email");
-const subject = document.querySelector(".form_subject");
-const phone = document.querySelector(".form_phone");
-const textarea = document.querySelector(".email");
+    name = document.querySelector(".form_name"),
+    email = document.querySelector(".form_email"),
+    subject = document.querySelector(".form_subject"),
+    phone = document.querySelector(".form_phone"),
+    textarea = document.querySelector(".email"),
 
-const emailError = document.querySelector(".error_email");
-const nameError = document.querySelector(".error_name");
-const subjectError = document.querySelector(".error_subject");
-const phoneError = document.querySelector(".error_phone");
-
-
-const modal = document.querySelector(".modal");
-const btn = document.querySelector(".myBtn");
-const checkbox = document.getElementById("checkbox");
+    emailError = document.querySelector(".error_email"),
+    nameError = document.querySelector(".error_name"),
+    subjectError = document.querySelector(".error_subject"),
+    phoneError = document.querySelector(".error_phone"),
 
 
+    modal = document.querySelector(".modal"),
+    btn = document.querySelector(".myBtn"),
+    checkbox = document.getElementById("checkbox");
 
-// mail sendler
+
+// mail sender
 form.addEventListener('submit', formSend);
 
 async function formSend(e) {
@@ -65,17 +64,15 @@ async function formSend(e) {
     if(response.ok) {
         let result = await response.json();
         alert(result.message);
-        //formPreview.innerHTML = '';
         form.reset();
     } else {
-        alert("Error Adam")
+        console.log("Error");
     }
 }
 
 
 email.addEventListener("input", function(e) {
     if(email.validity.valid) {
-        //emailError.textContent = "";
         emailError.style.display = "none"
         emailError.className = "error";
     } else {
@@ -110,11 +107,9 @@ phone.addEventListener("input", function(e) {
     }
 })
 
-
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     
-
     if(!email.validity.valid) {
         showError.showErrorEmail();
         e.preventDefault()
@@ -138,7 +133,6 @@ form.addEventListener("submit", function(e) {
 
 // Modal window
 btn.addEventListener("click", function(e) {
-    //e.preventDefault();
     if(email.validity.valid && name.validity.valid && subject.validity.valid && phone.validity.valid && checkbox.checked) {        
         modal.style.display = 'block'; 
         body.classList.toggle("noscroll");
@@ -160,6 +154,7 @@ window.addEventListener("click", function(e) {
 
 }, false)
 
+// there are function is the object to show them below
 let showError = {
     showErrorEmail: function () {
         if(email.validity.valueMissing) {
@@ -201,7 +196,7 @@ let showError = {
         }
         phoneError.className = "error active";
     },
-}
+};
 
 
 

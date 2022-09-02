@@ -1,16 +1,13 @@
+@import "../../scss_features/scss_features.scss";
+
 footer {
     background: #828CDE;
     .footer_info {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        @include flexRowSpace-BetweenCenter();
         color: #FFFFFF;
         padding: 37px 141px 43px 434px;
         p {
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 400;
+            @include standardFontAvenir400();
             font-size: 16px;
             line-height: 24px;
             text-align: center;

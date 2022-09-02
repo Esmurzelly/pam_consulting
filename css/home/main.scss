@@ -5,19 +5,19 @@
 @import "../css_elements/form/form.css";
 @import "../css_elements/qa/qa.css";
 
+@import "../scss_features/scss_features.scss";
+
 
 .our_services {
-    font-family: 'AvenirNextCyr-Medium';
-    background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+    background: $BackgroundColorContent;
     padding-bottom: 70px;
    .our_services__title {
         padding-top: 20px;
         text-transform: uppercase;
         margin-bottom: 20px;
         h2 {
+            @include standardFontAvenir();
             text-align: center;
-            font-style: normal;
-            font-weight: 600;
             font-size: 36px;
             color: #ffffff;
         }
@@ -25,15 +25,12 @@
     .line {
         max-width: 380px;
         border: 2px solid #FDBFA3;
-        margin: 0 auto;
+        margin: $marginCenter;
     }
     .cards {
         margin: 60px 130px 80px 130px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flexRowSpace-BetweenCenter();
         flex-wrap: wrap;
-        align-items: center;
         gap: 20px;
         .card {
             display: flex;
@@ -47,11 +44,10 @@
 
             .card_describing {
                 max-width: 310px;
-                margin: 0 auto;
+                margin: $marginCenter;
                 h3 {
                     color: #434364;
-                    font-style: normal;
-                    font-weight: 600;
+                    @include standardFontAvenir();
                     font-size: 28px;
                     text-transform: uppercase;
                     width: 175px;
@@ -66,15 +62,8 @@
                 }
                 button {
                     margin-top: 20px;
-                    border: none;
-                    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-                    box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-                    border-radius: 88.1657px;
-                    padding: 10px 20px;
-                    color: #6D31D0;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
                     font-size: 20px;
+                    @include button();
                     margin-bottom: 20px;
                 }
             }
@@ -101,15 +90,10 @@
             max-width: 20%;
         }
         .moving__info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            @include flexColumnSpace-BetweenCenter();
             margin: 0 70px;
             h3 {
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 600;
+                @include standardFontAvenir();
                 font-size: 40px;
                 line-height: 40px;
                 text-align: center;
@@ -118,9 +102,7 @@
             }
             p {
                 margin-top: 33px;   
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 400;
+                @include standardFontAvenir400();
                 font-size: 16px;
                 line-height: 24px;
                 text-align: center;
@@ -130,15 +112,8 @@
             }
             button {
                 margin-top: 28px;
-                border: none;
-                background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-                box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-                border-radius: 88.1657px;
-                padding: 10px 20px;
-                color: #6D31D0;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 600;
                 font-size: 20px;
+                @include button();
             }
         }
     }
@@ -146,11 +121,8 @@
 
 
 .choosing {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+    @include flexColumnSpace-BetweenCenter();
+    background: $BackgroundColorContentYellow;
     max-width: 100%;
     padding: 80px 133px;
     
@@ -159,18 +131,14 @@
         color: #434364;
         max-width: 580px;
         h2 {
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 600;
+            @include standardFontAvenir();
             font-size: 36px;
             line-height: 40px;
             text-transform: uppercase;
         }
         p {
             margin-top: 20px;
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 400;
+            @include standardFontAvenir400();
             font-size: 16px;
             line-height: 24px;
             text-align: center;
@@ -192,26 +160,26 @@
             max-width: 280px;
             text-align: center;
             &:first-child img {
-                background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
-                border-radius: 45%;
+                background: $typeChoosingPurple;
+                border-radius: $half;
                 padding: 28px;
             }
 
             &:nth-child(2) img {
-                background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);                border-radius: 800px;
-                border-radius: 45%;
+                background: $typeChoosingYellow;
+                border-radius: $half;
                 padding: 19px;
             }
 
             &:nth-child(3) img {
-                background: linear-gradient(75.69deg, #828CDE -12.62%, #00B8C3 103.26%);
-                border-radius: 45%;
+                background: $typeChoosingyBlue;
+                border-radius: $half;
                 padding: 25px;
             }
 
             &:last-child img {
-                background: linear-gradient(134.65deg, rgba(255, 185, 175, 0.3) -3.89%, #A651FB 94.34%);
-                border-radius: 45%;
+                background: $typeChoosingPink;
+                border-radius: $half;
                 padding: 25px;
             }
             .describe_choosing__type {
@@ -221,17 +189,13 @@
                 align-items: center;
                 width: 257px;
                 h4  {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 600;
+                    @include standardFontMontserrat();
                     font-size: 20px;
                     line-height: 32px;
                     color: #6D31D0;
                 }
                 p {
-                    font-family: 'AvenirNextCyr-Medium';
-                    font-style: normal;
-                    font-weight: 400;
+                    @include standardFontAvenir400();
                     font-size: 16px;
                     line-height: 24px;
                     text-align: center;
@@ -245,10 +209,7 @@
 
 
 .map {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexRowSpace-BetweenCenter();
     padding: 81px 50px 10px 129px;
     .cyprus_map {
         display: flex;
@@ -258,18 +219,14 @@
             display: block;
             margin-bottom: 100px;
             h3 {
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 600;
+                @include standardFontAvenir();
                 font-size: 28px;
                 line-height: 32px;
                 text-transform: uppercase;
                 color: #6D31D0;
             }
             p {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 600;
+                @include standardFontMontserrat();
                 font-size: 20px;
                 line-height: 32px;
                 color: #434364;
@@ -284,7 +241,7 @@
         flex-direction: column;
         align-items: center;
         max-width: 480px;
-        margin: 0 auto;
+        margin: $marginCenter;
         background: #FFFFFF;
         box-shadow: 12.8037px 15.3644px 13px rgba(0, 0, 0, 0.035);
         border-radius: 0px 0px 12px 12px;
@@ -297,9 +254,7 @@
             text-align: center;
             padding: 17px 50px 28px 50px;
             h4 {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 600;
+                @include standardFontMontserrat();
                 font-size: 20px;
                 line-height: 32px;
                 color: #434364;
@@ -322,12 +277,9 @@
 }
 
 .founder {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    @include flexRowSpace-BetweenCenter();
     flex-wrap: wrap;
-    background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+    background: $BackgroundColorContent;
     padding: 37px 130px;
     h2, p {
         color: #FFFFFF;
@@ -339,9 +291,7 @@
         align-items: flex-start;
         position: relative;
         h2 { 
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 600;
+            @include standardFontAvenir();
             font-size: 36px;
             line-height: 40px;
             text-transform: uppercase;
@@ -355,9 +305,7 @@
             right: 280px;
         }
         p {
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 400;
+            @include standardFontAvenir400();
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 0.5px;
@@ -371,16 +319,8 @@
         }
         button {
             margin-top: 54.25px;
-            border: none;
-            background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-            box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-            border-radius: 88.1657px;
-            padding: 10px 20px;
-            color: #6D31D0;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
             font-size: 20px;
-            cursor: pointer;
+            @include button();
         }
     }
     .founder_card {
@@ -396,9 +336,7 @@
             margin-left: 40px;
             h4 {
                 margin-top: 24px;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 600;
+                @include standardFontMontserrat();
                 font-size: 20px;
                 line-height: 32px;
                 color: #6D31D0;
@@ -406,9 +344,7 @@
             }
             p {
                 margin-top: 15px;
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 400;
+                @include standardFontAvenir400();
                 font-size: 16px;
                 line-height: 24px;
                 letter-spacing: 0.5px;
@@ -416,16 +352,8 @@
             }
             button {
                 margin-top: 17px;
-                border: none;
-                background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-                box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-                border-radius: 88.1657px;
-                padding: 10px 20px;
-                color: #6D31D0;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 600;
                 font-size: 20px;
-                cursor: pointer;
+                @include button();
             }
         }
     }
@@ -433,17 +361,12 @@
 
 
 .how_we_make {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+    @include flexColumnSpace-BetweenCenter();
+    background: $BackgroundColorContentYellow;
     max-width: 100%;
     padding: 80px 133px;
     h2 {
-        font-family: 'AvenirNextCyr-Medium';
-        font-style: normal;
-        font-weight: 600;
+        @include standardFontAvenir();
         font-size: 36px;
         line-height: 40px;
         text-transform: uppercase;
@@ -464,26 +387,26 @@
             width: 280px;
             text-align: center;
             &:first-child img {
-                background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
-                border-radius: 45%;
+                background: $typeChoosingPurple;
+                border-radius: $half;
                 padding: 30px;
             }
 
             &:nth-child(2) img {
-                background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);               
-                border-radius: 45%;
+                background: $typeChoosingYellow;               
+                border-radius: $half;
                 padding: 25px;
             }
 
             &:nth-child(3) img {
-                background: linear-gradient(75.69deg, #828CDE -12.62%, #00B8C3 103.26%);
-                border-radius: 45%;
+                background: $typeChoosingyBlue;
+                border-radius: $half;
                 padding: 25px;
             }
 
             &:last-child img {
-                background: linear-gradient(134.65deg, rgba(255, 185, 175, 0.3) -3.89%, #A651FB 94.34%);
-                border-radius: 45%;
+                background: $typeChoosingPink;
+                border-radius: $half;
                 padding: 25px;
             }
             .describe_choosing__type {
@@ -493,17 +416,13 @@
                 align-items: center;
                 width: 257px;
                 h4  {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 600;
+                    @include standardFontMontserrat();
                     font-size: 20px;
                     line-height: 32px;
                     color: #6D31D0;
                 }
                 p {
-                    font-family: 'AvenirNextCyr-Medium';
-                    font-style: normal;
-                    font-weight: 400;
+                    @include standardFontAvenir400();
                     font-size: 16px;
                     line-height: 24px;
                     text-align: center;
@@ -527,9 +446,7 @@
     max-width: 100%;
     h2 {
         text-align: center;
-        font-family: 'AvenirNextCyr-Medium';
-        font-style: normal;
-        font-weight: 600;
+        @include standardFontAvenir();
         font-size: 36px;
         line-height: 40px;
         text-align: center;

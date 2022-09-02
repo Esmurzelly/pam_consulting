@@ -1,11 +1,11 @@
+@import "../../scss_features/scss_features.scss";
+
 body {
     .question {
-        background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
+        background: $BackgroundColorQA;
         padding: 80px 130px 84px 130px;
         h2 {
-            font-family: 'AvenirNextCyr-Medium';
-            font-style: normal;
-            font-weight: 600;
+            @include standardFontAvenir();
             font-size: 36px;
             line-height: 40px;
             text-align: center;
@@ -38,15 +38,13 @@ body {
                 position: absolute;
                 top: 151px;
                 right: 32%;    
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 400;
+                @include standardFontAvenir400();
                 font-size: 16px;
                 line-height: 24px;
                 text-align: right;
                 letter-spacing: 0.5px;
                 color: #FFFFFF;
-                background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+                background: $BackgroundColorButtonQA;
                 box-shadow: 0px 2.7141px 5.42821px rgba(28, 37, 44, 0.08);
                 border-radius: 20px;
                 border: none;
@@ -62,18 +60,14 @@ body {
                 border-bottom-right-radius: 10%;
                 border-bottom-left-radius: 10%;
                 h4 {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 600;
+                    @include standardFontMontserrat();
                     font-size: 20px;
                     line-height: 32px;
                     color: #6D31D0;
                     margin: 10px auto;
                 }
                 p {
-                    font-family: 'AvenirNextCyr-Medium';
-                    font-style: normal;
-                    font-weight: 400;
+                    @include standardFontAvenir400();
                     font-size: 16px;
                     line-height: 24px;
                     letter-spacing: 0.5px;
@@ -109,35 +103,27 @@ body {
     }
 
 
-    @media (max-width: 1686px) {  
-        // contact
-        
+    @media (max-width: 1686px) {          
         .question .swiper-slide .content button  {
             top: 150px;
             right: 23%;
         }
     }
 
-    @media (max-width: 1439px) {  
-        // contact
-        
+    @media (max-width: 1439px) {          
         .question .swiper-slide .content button  {
             right: 40%;
         }
     }
 
-    @media (max-width: 1276px) {  
-        // contact
-        
+    @media (max-width: 1276px) {          
         .question .swiper-slide .content button  {
             right: 30%;
         }
     }
     
     
-    @media (max-width: 1000px) {  
-        // contact
-        
+    @media (max-width: 1000px) {          
         .question .swiper-slide .content button  {
             right: 2%;
         }

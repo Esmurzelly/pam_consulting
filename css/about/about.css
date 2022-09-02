@@ -3,30 +3,24 @@
 @import "../css_elements/footer/footer.css";
 @import "../css_elements/form/form.css";
 @import "../css_elements/qa/qa.css";
-body {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 body .we_are {
   background: url("../../img/about/offer_team_image_1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
   width: 100%;
-  height: 530px;
   position: relative;
   overflow: hidden;
+  background-position-x: center;
+  height: 530px;
 }
 body .we_are p {
+  font-family: "AvenirNextCyr-Medium";
+  font-style: normal;
+  font-weight: 600;
   position: absolute;
   top: 45%;
   left: 10%;
   z-index: 2;
-  font-family: "AvenirNextCyr-Medium";
-  font-style: normal;
-  font-weight: 600;
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
@@ -56,8 +50,8 @@ body .we_are_describing {
 }
 body .we_are_describing p {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   color: #FFFFFF;
@@ -103,10 +97,10 @@ body .what_we_do .what_we_do_image {
   background: url("/img/about/unsplash_G8ucy10dpM8.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
   width: 100%;
-  height: auto;
   position: relative;
+  overflow: hidden;
+  background-position-x: center;
 }
 body .what_we_do .what_we_do_image::before {
   content: "";
@@ -141,6 +135,7 @@ body .why_we_do h2 {
   color: #434364;
 }
 body .why_we_do .pluses {
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +145,6 @@ body .why_we_do .pluses {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 60px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 20px;
@@ -170,32 +164,30 @@ body .why_we_do .pluses .pluses_type {
   text-align: center;
 }
 body .why_we_do .pluses .pluses_type:first-child img:first-child {
-  background: linear-gradient(133.48deg, #2EA3F2 -3.48%, #A651FB 130.9%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.43%, #828CDE), color-stop(201.93%, #6D31D0));
+  background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
   border-radius: 50%;
   padding: 25px 19px 25px 31px;
 }
 body .why_we_do .pluses .pluses_type:nth-child(2) img {
   background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);
-  border-radius: 50%;
   padding: 20px;
   border-radius: 50%;
 }
 body .why_we_do .pluses .pluses_type:nth-child(3) img {
   background: linear-gradient(75.69deg, #828CDE -12.62%, #00B8C3 103.26%);
-  padding: 20px;
   padding: 23px 25px 27px 25px;
   border-radius: 50%;
 }
 body .why_we_do .pluses .pluses_type:last-child img {
   background: linear-gradient(134.65deg, rgba(255, 185, 175, 0.3) -3.89%, #A651FB 94.34%);
-  padding: 23px 25px 27px 25px;
   padding: 25px;
   border-radius: 50%;
 }
 body .why_we_do .pluses .pluses_type .pluses_type_describe h4 {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   text-align: center;

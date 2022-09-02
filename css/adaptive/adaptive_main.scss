@@ -1,3 +1,5 @@
+@import "../scss_features/scss_features.scss";
+
 @media (max-width: 1240px) {
     .map {
         padding: 81px 50px 10px 26px;
@@ -5,10 +7,7 @@
 }
 @media (max-width: 1167px) {
     .map {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include flexColumnSpace-BetweenCenter();
         gap: 50px;
     } 
 }
@@ -233,12 +232,7 @@
 
 }
 
-
-
-
-
 @media (max-width: 858px) {
-    ///////////////////////////////////////////
     header .slider {
             .swiper1 .swiper-wrapper {
                 .swiper-slide_1 .content {

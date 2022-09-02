@@ -1,23 +1,17 @@
-@import url("../style.css");
+@import "../style.css";
 @import "../css_elements/menu/menu.css";
 @import "../css_elements/footer/footer.css";
 @import "../css_elements/form/form.css";
 @import "../css_elements/qa/qa.css";
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 body .relocation {
   background: url("../../img/family/head.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
-  height: 530px;
   position: relative;
   overflow: hidden;
+  background-position: center;
+  height: 530px;
 }
 body .relocation::after {
   content: "";
@@ -39,8 +33,8 @@ body .relocation p {
   left: 3%;
   z-index: 2;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 36px;
   line-height: 40px;
   color: #434364;
@@ -189,8 +183,8 @@ body .help .pluses .pluses_type:last-child img {
 }
 body .help .pluses .pluses_type .pluses_type_describe h4 {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   text-align: center;

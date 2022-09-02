@@ -1,3 +1,7 @@
+@import "../scss_features/scss_features.scss";
+@import "../style.css";
+
+
 header {
     .swiper1 {
         max-width: 1440px;
@@ -83,13 +87,14 @@ header {
                     }
                     & button {
                         margin-top: 23px;
-                        border: none;
-                        background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-                        box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-                        border-radius: 88.1657px;
-                        padding: 10px 20px;
-                        color: #6D31D0;
-                        font-family: 'Montserrat', sans-serif;
+                        @include button();
+                        // border: none;
+                        // background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+                        // box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+                        // border-radius: 88.1657px;
+                        // padding: 10px 20px;
+                        // color: #6D31D0;
+                        // font-family: 'Montserrat', sans-serif;
                     }
                 }
                 .advertisement {

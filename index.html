@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="css/home/header.css">
     <link rel="stylesheet" href="css/home/main.css">
     <link rel="stylesheet" href="css/adaptive/adaptive_main.css">
-    <link
-  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -375,7 +374,7 @@
 
         </div>
         <div class="form">
-            <form action="#" method="get" name="form" enctype="multipart/form-data">
+            <form action="sendemail.php" method="post" name="form" enctype="multipart/form-data">
                 <h3>send inquiry</h3>
                 <div class="form__data">
                     <div class="form__name">
@@ -383,7 +382,7 @@
                         <span class="error error_name" aria-live="polite"></span>
                     </div>
                     <div class="form__email">
-                        <input class="form_email" name="email" placeholder="Email" type="email" required minlength="8">
+                        <input class="form_email" name="gmail" placeholder="Email" type="email" required minlength="8">
                         <span class="error error_email" aria-live="polite"></span>
                     </div>
                     <div class="form__subject">
@@ -396,7 +395,7 @@
                     </div>                    
                 </div>
                 
-                <textarea placeholder="Your message" class="email" name="email" id="" cols="30" rows="10" required></textarea>
+                <textarea placeholder="Your message" class="email" name="message" id="" cols="30" rows="10" required></textarea>
 
                 <div class="privacy_policy">
                     <label for="checkbox">
@@ -574,10 +573,12 @@
             <p>Who designed this website?</p>
         </div>
       </footer>
-    
-    
-    <script  src="js/script.js"></script>
+
+      <script  src="js/script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+
+    
 </body>
 </html>

@@ -1,3 +1,4 @@
+@import "../style.css";
 header .swiper1 {
   max-width: 1440px;
   height: 740px;
@@ -96,12 +97,14 @@ header .swiper1 .swiper-slide .content .main_info button {
   margin-top: 23px;
   border: none;
   background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
   border-radius: 88.1657px;
   padding: 10px 20px;
   color: #6D31D0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+  cursor: pointer;
 }
 header .swiper1 .swiper-slide .content .advertisement {
   margin-top: 35px;

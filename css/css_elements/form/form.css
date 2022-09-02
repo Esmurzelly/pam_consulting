@@ -54,18 +54,17 @@ body .modal .modal-content p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 80px 130px;
-  padding-bottom: 30px;
+  padding: 80px 130px 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(109, 49, 208, 0.1)), color-stop(28.65%, rgba(109, 49, 208, 0.21)), color-stop(53.12%, rgba(109, 49, 208, 0.475)), to(#6D31D0));
   background: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
 }
@@ -78,16 +77,16 @@ body .modal .modal-content p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: rgba(255, 219, 128, 0.5);
   mix-blend-mode: normal;
   border-radius: 60px;
@@ -276,16 +275,16 @@ body .modal .modal-content p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .contact .contact__info div {
   display: -webkit-box;
@@ -308,8 +307,8 @@ body .modal .modal-content p {
 }
 .contact .contact__info div p {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   color: #6D31D0;

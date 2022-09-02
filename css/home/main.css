@@ -4,7 +4,6 @@
 @import "../css_elements/form/form.css";
 @import "../css_elements/qa/qa.css";
 .our_services {
-  font-family: "AvenirNextCyr-Medium";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.43%, #828CDE), color-stop(201.93%, #6D31D0));
   background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
   padding-bottom: 70px;
@@ -15,9 +14,10 @@
   margin-bottom: 20px;
 }
 .our_services .our_services__title h2 {
-  text-align: center;
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
+  text-align: center;
   font-size: 36px;
   color: #ffffff;
 }
@@ -31,18 +31,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 20px;
 }
 .our_services .cards .card {
@@ -69,6 +69,7 @@
 }
 .our_services .cards .card .card_describing h3 {
   color: #434364;
+  font-family: "AvenirNextCyr-Medium";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -85,16 +86,17 @@
 }
 .our_services .cards .card .card_describing button {
   margin-top: 20px;
+  font-size: 20px;
   border: none;
   background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
   border-radius: 88.1657px;
   padding: 10px 20px;
   color: #6D31D0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+  cursor: pointer;
   margin-bottom: 20px;
 }
 
@@ -127,16 +129,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 70px;
 }
 .moving .moving__content .moving__info h3 {
@@ -163,32 +165,33 @@
 }
 .moving .moving__content .moving__info button {
   margin-top: 28px;
+  font-size: 20px;
   border: none;
   background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
   border-radius: 88.1657px;
   padding: 10px 20px;
   color: #6D31D0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+  cursor: pointer;
 }
 
 .choosing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-47.89%, #FEFC9E), color-stop(126.42%, #FDBFA3));
   background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
   max-width: 100%;
@@ -258,7 +261,6 @@
 }
 .choosing .choosing__types .choosing__type:nth-child(2) img {
   background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);
-  border-radius: 800px;
   border-radius: 45%;
   padding: 19px;
 }
@@ -288,8 +290,8 @@
 }
 .choosing .choosing__types .choosing__type .describe_choosing__type h4 {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   color: #6D31D0;
@@ -309,16 +311,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 81px 50px 10px 129px;
 }
 .map .cyprus_map {
@@ -348,8 +350,8 @@
 }
 .map .cyprus_map .cyprus_map_text p {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   color: #434364;
@@ -388,8 +390,8 @@
 }
 .map .examples .examples_describing h4 {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   color: #434364;
@@ -412,16 +414,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-21.43%, #828CDE), color-stop(201.93%, #6D31D0));
@@ -478,16 +480,16 @@
 }
 .founder .founder_describing button {
   margin-top: 54.25px;
+  font-size: 20px;
   border: none;
   background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
   border-radius: 88.1657px;
   padding: 10px 20px;
   color: #6D31D0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
   cursor: pointer;
 }
 .founder .founder_card {
@@ -514,8 +516,8 @@
 .founder .founder_card .founder_card__name h4 {
   margin-top: 24px;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   color: #6D31D0;
@@ -533,16 +535,16 @@
 }
 .founder .founder_card .founder_card__name button {
   margin-top: 17px;
+  font-size: 20px;
   border: none;
   background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
-  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
-          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
   border-radius: 88.1657px;
   padding: 10px 20px;
   color: #6D31D0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  -webkit-box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+          box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
   cursor: pointer;
 }
 
@@ -550,16 +552,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-47.89%, #FEFC9E), color-stop(126.42%, #FDBFA3));
   background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
   max-width: 100%;
@@ -644,8 +646,8 @@
 }
 .how_we_make .how_we_make__types .how_we_make__type .describe_choosing__type h4 {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   color: #6D31D0;

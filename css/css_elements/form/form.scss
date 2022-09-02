@@ -1,3 +1,5 @@
+@import "../../scss_features/scss_features.scss";
+
 body {
     .modal {
         display: none;
@@ -52,34 +54,22 @@ body {
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 130px;
-
-
-
-    padding-bottom: 30px;
-    background: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
+    @include flexColumnSpace-BetweenCenter();
+    padding: 80px 130px 150px;
+    background: $BackgroundColorForm;
     
     .form {
         max-width: 1180px;
-        margin: 0 auto;
+        margin: $marginCenter;
         margin-top: 60px;
         form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+            @include flexColumnSpace-BetweenCenter();
             background-color: rgba(255, 219, 128, 0.5);
             mix-blend-mode: normal;
             border-radius: 60px;
             padding: 20px 280px;
             & h3 {
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 600;
+                @include standardFontAvenir();
                 font-size: 28px;
                 line-height: 32px;
                 text-transform: uppercase;
@@ -161,9 +151,7 @@ body {
                     margin-right: 20px;
                 }
                 & span {
-                    font-family: 'AvenirNextCyr-Medium';
-                    font-style: normal;
-                    font-weight: 400;
+                    @include standardFontAvenir400();
                     font-size: 16px;
                     line-height: 24px;
                     letter-spacing: 0.5px;
@@ -173,9 +161,7 @@ body {
             button {
                 margin-top: 32px;
                 padding: 18px 34px;
-                font-family: 'AvenirNextCyr-Medium';
-                font-style: normal;
-                font-weight: 700;
+                @include standardFontAvenir700();
                 font-size: 20px;
                 line-height: 120%;
                 text-align: center;
@@ -191,9 +177,7 @@ body {
     }
 
     h2  {
-        font-family: 'AvenirNextCyr-Medium';
-        font-style: normal;
-        font-weight: 600;
+        @include standardFontAvenir();
         font-size: 36px;
         line-height: 40px;
         text-align: center;
@@ -206,10 +190,7 @@ body {
         border: 2px solid #FDBFA3;
     }
     .contact__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+        @include flexColumnSpace-BetweenCenter();
         div {
             display: flex;
             flex-direction: column;
@@ -221,9 +202,7 @@ body {
                 border-radius: 20px;
             }
             & p {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 600;
+                @include standardFontMontserrat();
                 font-size: 20px;
                 line-height: 32px;
                 color: #6D31D0;
@@ -290,17 +269,6 @@ body {
         }
     } 
 }
-
-
-
-// @media (max-width: 920px) {
-//     .contact .form form {
-//         padding: 16px 41px;
-//         // .form__data input {
-//         //     padding: 12.5px 63px 10.5px 23px;
-//         // }
-//     }
-// }
 
 @media (max-width: 767px) {
     .contact .form form .form__data {

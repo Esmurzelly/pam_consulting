@@ -2,7 +2,7 @@
 @import "../css_elements/footer/footer.css";
 @import "../css_elements/form/form.css";
 @import "../css_elements/qa/qa.css";
-@import url("../style.css");
+@import "../style.css";
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,11 +11,11 @@ body .invest_relocation {
   background: url("../../img/investment/head.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
-  height: 530px;
   position: relative;
   overflow: hidden;
+  background-position: center;
+  height: 530px;
 }
 body .invest_relocation::after {
   content: "";
@@ -37,8 +37,8 @@ body .invest_relocation p {
   left: 3%;
   z-index: 2;
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 36px;
   line-height: 40px;
   color: #434364;
@@ -157,6 +157,7 @@ body .help h2 {
   color: #434364;
 }
 body .help .pluses {
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +167,6 @@ body .help .pluses {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 60px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 20px;
@@ -212,8 +212,8 @@ body .help .pluses .pluses_type:last-child img {
 }
 body .help .pluses .pluses_type .pluses_type_describe h4 {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   font-size: 20px;
   line-height: 32px;
   text-align: center;

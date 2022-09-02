@@ -50,6 +50,29 @@ const btn = document.querySelector(".myBtn");
 const checkbox = document.getElementById("checkbox");
 
 
+
+// mail sendler
+form.addEventListener('submit', formSend);
+
+async function formSend(e) {
+    e.preventDefault();
+
+    let formData = new FormData(form);
+    let response = await fetch('./sendemail.php', {
+        method: 'POST',
+        body: formData
+    });
+    if(response.ok) {
+        let result = await response.json();
+        alert(result.message);
+        //formPreview.innerHTML = '';
+        form.reset();
+    } else {
+        alert("Error Adam")
+    }
+}
+
+
 email.addEventListener("input", function(e) {
     if(email.validity.valid) {
         //emailError.textContent = "";
@@ -110,15 +133,12 @@ form.addEventListener("submit", function(e) {
     if(!phone.validity.valid) {
         showError.showErrorPhone();
         e.preventDefault()
-    }
-
-
-    
+    }    
 })
 
 // Modal window
 btn.addEventListener("click", function(e) {
-    e.preventDefault();
+    //e.preventDefault();
     if(email.validity.valid && name.validity.valid && subject.validity.valid && phone.validity.valid && checkbox.checked) {        
         modal.style.display = 'block'; 
         body.classList.toggle("noscroll");

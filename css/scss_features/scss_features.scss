@@ -1,0 +1,123 @@
+// button
+
+@mixin button {
+    border: none;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    border-radius: 88.1657px;
+    padding: 10px 20px;
+    color: #6D31D0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 3.52663px 35.2663px rgba(255, 185, 175, 0.3);
+    cursor: pointer;
+}
+
+
+// fonts
+
+@mixin styleFamilyAvenir {
+    font-family: 'AvenirNextCyr-Medium';
+    font-style: normal;
+}
+
+@mixin standardFontAvenir {
+    @include styleFamilyAvenir();
+    font-weight: 600;
+}
+
+@mixin standardFontAvenir400 {
+    @include styleFamilyAvenir();
+    font-weight: 400;
+}
+
+@mixin standardFontAvenir700 {
+    @include styleFamilyAvenir();
+    font-weight: 700;
+}
+
+@mixin standardFontMontserrat {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+}
+
+// center position
+@mixin marginCenter {
+    margin: 0 auto;
+}
+
+
+// flex
+@mixin defaultFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexRowSpace-BetweenCenter {
+    @include defaultFlex();
+    flex-direction: row;
+}
+
+@mixin flexColumnSpace-BetweenCenter {
+    @include defaultFlex();
+    flex-direction: column;
+}
+
+
+// Background cover
+@mixin defaultBackgroundCover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin BackgroungCover {
+    @include defaultBackgroundCover();
+    background-position-x: center;
+}
+
+
+@mixin BackgroungCover530 {
+    @include defaultBackgroundCover();
+    background-position-x: center;
+    height: 530px;
+}
+
+@mixin BackgroungCover530PositionCenter {
+    @include defaultBackgroundCover();
+    background-position: center;
+    height: 530px;
+}
+
+@mixin BackgroungCover530PositionRightTop {
+    @include defaultBackgroundCover();
+    background-position: right top;
+    height: 530px;
+}
+
+
+// variables
+
+$marginCenter: 0 auto;
+
+//gradients
+$BackgroundColorContent: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+$BackgroundColorContentYellow: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+$BackgroundColorContentWhiteYellow: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+$GraduallyLineBackgroung: linear-gradient(to left, #ffffff, #ffffff);
+$BackgroundColorForm: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
+$BackgroundColorQA: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
+$BackgroundColorButtonQA: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+
+$typeChoosingPurple: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+$typeChoosingYellow: linear-gradient(66.27deg, #FE6F2D -10.45%, #FFD059 76.78%);
+$typeChoosingyBlue: linear-gradient(75.69deg, #828CDE -12.62%, #00B8C3 103.26%);
+$typeChoosingPink: linear-gradient(134.65deg, rgba(255, 185, 175, 0.3) -3.89%, #A651FB 94.34%);
+$typeChoosingDarkBlue: linear-gradient(133.48deg, #2EA3F2 -3.48%, #A651FB 130.9%);
+
+
+// border-radius
+$half: 45%;
+$_half: 50%;

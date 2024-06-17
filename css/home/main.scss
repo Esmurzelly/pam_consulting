@@ -152,7 +152,7 @@
         align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 76px;
         .choosing__type {
             display: flex;
             flex-direction: column;
@@ -183,20 +183,19 @@
                 padding: 25px;
             }
             .describe_choosing__type {
-                margin-top: 34px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 257px;
+                width: 300px;
                 h4  {
                     @include standardFontMontserrat();
-                    font-size: 20px;
+                    font-size: 30px;
                     line-height: 32px;
                     color: #6D31D0;
                 }
                 p {
                     @include standardFontAvenir400();
-                    font-size: 16px;
+                    font-size: 24px;
                     line-height: 24px;
                     text-align: center;
                     letter-spacing: 0.5px;
@@ -386,31 +385,8 @@
             align-items: center;
             width: 280px;
             text-align: center;
-            &:first-child img {
-                background: $typeChoosingPurple;
-                border-radius: $half;
-                padding: 30px;
-            }
-
-            &:nth-child(2) img {
-                background: $typeChoosingYellow;               
-                border-radius: $half;
-                padding: 25px;
-            }
-
-            &:nth-child(3) img {
-                background: $typeChoosingyBlue;
-                border-radius: $half;
-                padding: 25px;
-            }
-
-            &:last-child img {
-                background: $typeChoosingPink;
-                border-radius: $half;
-                padding: 25px;
-            }
+            
             .describe_choosing__type {
-                margin-top: 34px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;

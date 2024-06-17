@@ -6,12 +6,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-body button {
-  cursor: pointer;
-}
-body button a {
-  text-decoration: none;
-}
 
 @font-face {
   font-family: "AvenirNextCyr-Medium";

@@ -101,7 +101,7 @@ header .menu button {
 }
 
 header .menu {
-  padding: 0 20px;
+  padding: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,11 +109,15 @@ header .menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .menu button > a {
+  text-decoration: none;
 }
 header .menu .menu__list > li {
   position: relative;
@@ -183,7 +187,6 @@ header .menu .menu__sub-list li:not(:first-child) {
   header .menu nav > ul > li {
     font-size: 14px;
   }
-
   .moving .moving__content img {
     max-width: 17%;
   }
@@ -291,7 +294,6 @@ header .menu .menu__sub-list li:not(:first-child) {
     -webkit-transform: translateY(-9px) rotate(-45deg);
             transform: translateY(-9px) rotate(-45deg);
   }
-
   .menu .popup {
     position: fixed;
     top: 83px;
@@ -306,7 +308,6 @@ header .menu .menu__sub-list li:not(:first-child) {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-
   .popup.open {
     left: 0;
     z-index: 100;
@@ -330,7 +331,6 @@ header .menu .menu__sub-list li:not(:first-child) {
     max-width: 200px;
     padding: 15px;
   }
-
   header .menu {
     display: -webkit-box;
     display: -ms-flexbox;

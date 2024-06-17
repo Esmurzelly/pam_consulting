@@ -1,29 +1,29 @@
 // Burger menu
-const hamb = document.querySelector("#hamb");
-const popup = document.querySelector("#popup");
-const menu = document.querySelector("#menu__list");
-const body = document.body;
-const links = Array.from(menu.children);
+// const hamb = document.querySelector("#hamb");
+// const popup = document.querySelector("#popup");
+// const menu = document.querySelector("#menu__list");
+// const body = document.body;
+// const links = Array.from(menu.children);
 
-hamb.addEventListener("click", hambHandler);
-links.forEach((link) => {
-    link.addEventListener("click", closeOnClick)
-})
+// hamb.addEventListener("click", hambHandler);
+// links.forEach((link) => {
+//     link.addEventListener("click", closeOnClick)
+// })
 
-function hambHandler (e) {
-    e.preventDefault();
-    popup.classList.toggle("open");
-    hamb.classList.toggle("active");
-    body.classList.toggle("noscroll");
-    // renderPopup();
-    popup.appendChild(menu);
-}
+// function hambHandler (e) {
+//     e.preventDefault();
+//     popup.classList.toggle("open");
+//     hamb.classList.toggle("active");
+//     body.classList.toggle("noscroll");
+//     // renderPopup();
+//     popup.appendChild(menu);
+// }
 
-function closeOnClick() {
-    popup.classList.remove("open");
-    hamb.classList.remove("active");
-    body.classList.remove("noscroll");
-}
+// function closeOnClick() {
+//     popup.classList.remove("open");
+//     hamb.classList.remove("active");
+//     body.classList.remove("noscroll");
+// }
 
 // function renderPopup() {
 //     popup.appendChild(menu);
@@ -48,27 +48,6 @@ const form = document.getElementsByTagName('form')[0],
     modal = document.querySelector(".modal"),
     btn = document.querySelector(".myBtn"),
     checkbox = document.getElementById("checkbox");
-
-
-// mail sender
-form.addEventListener('submit', formSend);
-
-async function formSend(e) {
-    e.preventDefault();
-
-    let formData = new FormData(form);
-    let response = await fetch('./sendemail.php', {
-        method: 'POST',
-        body: formData
-    });
-    if(response.ok) {
-        let result = await response.json();
-        alert(result.message);
-        form.reset();
-    } else {
-        console.log("Error");
-    }
-}
 
 
 email.addEventListener("input", function(e) {

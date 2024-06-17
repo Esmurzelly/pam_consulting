@@ -23,9 +23,8 @@
 }
 @media (max-width: 1000px) {
   header .slider {
-    margin-top: 82px;
+    margin-top: 58px;
   }
-
   header .swiper .swiper-pagination {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,19 +155,6 @@
     padding: 2px 44px 5px 8px;
     color: #828CDE;
   }
-  header .swiper .swiper-slide_2 .content, header .swiper .swiper-slide_3 .content, header .swiper .swiper-slide_4 .content, header .swiper .swiper-slide_5 .content, header .swiper .swiper-slide_6 .content {
-    top: 50px;
-  }
-  header .swiper .swiper-slide_5 .content .main_info > h5, header .swiper h1,
-header .swiper .swiper-slide_3 .content .main_info > h5, header .swiper h1,
-header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
-    color: #434364;
-  }
-  header .swiper .swiper-slide_3 img {
-    background: -webkit-gradient(linear, left top, left bottom, from(#B7D6EF), color-stop(52.6%, rgba(183, 214, 239, 0.6)), to(rgba(183, 214, 239, 0)));
-    background: linear-gradient(180deg, #B7D6EF 0%, rgba(183, 214, 239, 0.6) 52.6%, rgba(183, 214, 239, 0) 100%);
-  }
-
   .our_services .cards {
     margin: 60px 130px 80px 130px;
     display: -webkit-box;
@@ -188,14 +174,12 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
             align-items: center;
     gap: 20px;
   }
-
   .moving {
     max-width: 1000px;
   }
   .moving .moving__content .moving__info {
     margin: 0 20px;
   }
-
   .map .cyprus_map .cyprus_map_text {
     display: block;
     text-align: center;
@@ -216,7 +200,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .map .cyprus_map img {
     max-width: 100%;
   }
-
   .founder .founder_describing {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -297,9 +280,8 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .our_services .cards .card img {
     width: 580px;
   }
-
   .moving .up_photo,
-.moving .bottom_photo {
+  .moving .bottom_photo {
     display: block;
     max-width: 100%;
   }
@@ -313,12 +295,10 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .moving .moving__content img {
     display: none;
   }
-
   .map .cyprus_map .cyprus_map_text p {
     font-weight: 400;
     font-size: 16px;
   }
-
   .how_we_make .how_we_make__types {
     margin-top: 60px;
     display: -webkit-box;
@@ -352,15 +332,12 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     width: 200px;
     text-align: center;
   }
-
   .partners.hide_first {
     display: block;
   }
-
   .partners {
     display: none;
   }
-
   .founder {
     padding: 37px 50px;
   }
@@ -402,13 +379,11 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .our_services .cards .card img {
     max-width: 380px;
   }
-
   .founder .founder_describing .line {
     right: 200px;
   }
-
   .how_we_make .how_we_make__types,
-.choosing .choosing__types {
+  .choosing .choosing__types {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -419,6 +394,13 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   }
 }
 @media (max-width: 566px) {
+  header .swiper .swiper-slide .content .main_info h4:first-child,
+  header .swiper .swiper-slide_5 .content .main_info > h5, header .swiper h1, header .swiper .swiper-slide_3 .content .main_info > h5, header .swiper h1, header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
+    font-size: 20px;
+  }
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .main_info h5 {
+    font-size: 14px;
+  }
   .founder {
     padding: 37px 0px;
   }
@@ -503,11 +485,15 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
     text-transform: uppercase;
     font-size: 16px;
   }
-
   .moving .moving__content .moving__info p {
     font-size: 14px;
   }
-
+  .choosing .describe_choosing_cyprus h2 {
+    font-size: 20px;
+  }
+  .choosing .describe_choosing_cyprus p {
+    font-size: 14px;
+  }
   .choosing {
     padding: 60px 20px;
   }
@@ -523,7 +509,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .choosing .choosing__types .choosing__type .describe_choosing__type {
     width: 200px;
   }
-
   .map {
     padding: 20px 0px;
   }
@@ -537,7 +522,6 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .map .examples {
     display: none;
   }
-
   .how_we_make {
     padding: 80px 50px;
     text-align: center;
@@ -556,17 +540,22 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .map .cyprus_map .cyprus_map_text h3 {
     font-size: 17px;
   }
-
   .map .cyprus_map .cyprus_map_text p {
     font-size: 14px;
   }
-
   .map .cyprus_map img {
     max-width: 80%;
     margin: 0 auto;
   }
 }
 @media (max-width: 416px) {
+  header .swiper .swiper-slide .content .main_info h4:first-child,
+  header .swiper .swiper-slide_5 .content .main_info > h5, header .swiper h1, header .swiper .swiper-slide_3 .content .main_info > h5, header .swiper h1, header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
+    font-size: 14px;
+  }
+  header .slider .swiper .swiper-wrapper .swiper-slide .content .main_info h5 {
+    font-size: 10px;
+  }
   .our_services .cards .card img {
     max-width: 314px;
   }
@@ -575,19 +564,15 @@ header .swiper .swiper-slide_2 .content .main_info > h5, header .swiper h1 {
   .founder .founder_card {
     padding: 20px 18px;
   }
-
   .contact .line {
     width: 260px;
   }
-
   .our_services .line {
     width: 260px;
   }
-
   header .slider .swiper .swiper-wrapper .swiper-slide .content .main_info h5 {
     width: 257px;
   }
-
   header .slider .swiper .swiper-wrapper .swiper-slide .content {
     left: 10px;
   }

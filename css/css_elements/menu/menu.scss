@@ -94,11 +94,15 @@ header {
 }
 
 header .menu {
-    padding: 0 20px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+    button > a {
+        text-decoration: none;
+    }
     .menu__list > li {
         position: relative;
         a {
